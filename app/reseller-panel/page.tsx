@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Trex IPTV Reseller Panel & Plans | Become Trex IPTV Reseller",
   description:
-    "Start your own IPTV business with the Trex IPTV reseller panel. Create customer accounts, manage subscriptions, issue free trials, handle renewals, and keep 100% of your profits with non-expiring credits.",
+    "Become a Trex IPTV Reseller & start your own IPTV business. Get Trex IPTV Reseller Panel to create accounts, manage subscriptions & keep 100% of your profits",
   alternates: {
     canonical: `${SITE_URL}/reseller-panel/`,
   },

@@ -24,7 +24,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="text-[26px] sm:text-5xl lg:text-[56px] font-bold tracking-tight leading-[1.1] text-zinc-950"
           >
-            <span className="text-[#ff6b35]">Trex IPTV</span> 4k | Trex IPTV Subscription | Trex OTT IPTV
+            <span className="text-[#ff6b35]">Trex IPTV</span> | Trex IPTV Subscription | Trex OTT IPTV
           </motion.h1>
 
           {/* Description paragraph: exactly matching the text in the screenshot */}

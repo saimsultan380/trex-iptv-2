@@ -39,8 +39,8 @@ export default function SubscriptionPlansClient() {
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 className="text-[26px] sm:text-5xl lg:text-[52px] font-bold tracking-tight leading-[1.12] text-zinc-950 mb-4 sm:mb-6"
               >
-                Trex IPTV Subscription Plans | Buy at Very{" "}
-                <span className="text-[#ff6b35]">Discounted Prices</span>
+                Trex IPTV Subscription Plans:{" "}
+                <span className="text-[#ff6b35]">Trex IPTV Subscription Provider</span>
               </motion.h1>
 
               <motion.p

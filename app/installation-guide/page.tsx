@@ -3,9 +3,9 @@ import InstallationGuideClient from "./InstallationGuideClient";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "How to Install or Set Up Trex IPTV on Compatible Devices",
+  title: "How to Install & Set Up Trex IPTV on Compatible Devices?",
   description:
-    "Step-by-step guide to set up Trex IPTV on Firestick, Android, Smart TV, iPhone or iOS, Windows PC, Mac, MAG Box, STB Emulator, Enigma2 & Roku under 5 minutes",
+    "Get a step-by-step guide to install or set up Trex IPTV on Android TV & Phones, Firestick, Smart TV, iPhone or iOS, Windows PC, Mac & Roku in under 5 minutes.",
   alternates: {
     canonical: `${SITE_URL}/installation-guide/`,
   },

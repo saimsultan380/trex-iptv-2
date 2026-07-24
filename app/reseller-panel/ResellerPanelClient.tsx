@@ -68,8 +68,8 @@ export default function ResellerPanelClient() {
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
                 className="text-[26px] sm:text-5xl lg:text-[52px] font-bold tracking-tight leading-[1.12] text-zinc-950 mb-4 sm:mb-6"
               >
-                Start Your Own IPTV Business With the{" "}
-                <span className="text-[#ff6b35]">Trex IPTV Reseller Panel</span>
+                Trex IPTV Reseller Panel &amp; Plans | Become{" "}
+                <span className="text-[#ff6b35]">Trex IPTV Reseller</span>
               </motion.h1>
 
               <motion.p

@@ -42,8 +42,8 @@ export default function InstallationGuideClient() {
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 className="text-[26px] sm:text-5xl lg:text-[48px] font-bold tracking-tight leading-[1.1] text-zinc-950 mb-4 sm:mb-6"
               >
-                Easy Guide to Install or Set Up{" "}
-                <span className="text-[#ff6b35]">Trex IPTV</span> on any Compatible Devices in under 4 Minutes
+                How to Install &amp; Set Up{" "}
+                <span className="text-[#ff6b35]">Trex IPTV</span> on Compatible Devices?
               </motion.h1>
 
               <motion.p
