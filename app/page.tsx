@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Header from "@/components/Header";
 import FeatureSection from "@/components/FeatureSection";
@@ -14,10 +15,15 @@ import FAQSection from "@/components/FAQSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import { homeMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = homeMetadata;
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-zinc-950 font-sans antialiased flex flex-col">
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }]} />
       <Header />
       <Hero />
       <ScrollReveal>

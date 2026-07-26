@@ -60,7 +60,7 @@ export default function SubscriptionCTASection() {
             <motion.a
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              href="/installation-guide"
+              href="/installation-guide/"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-[4px] border border-zinc-300 bg-white px-6 sm:px-8 text-[13px] sm:text-sm font-bold text-zinc-900 hover:bg-zinc-50 transition-colors whitespace-nowrap"
             >
               <BookOpen className="h-4 w-4" />

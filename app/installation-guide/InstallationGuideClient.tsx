@@ -92,7 +92,7 @@ export default function InstallationGuideClient() {
                 <motion.a
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  href="/subscription-plans"
+                  href="/subscription-plans/"
                   className="inline-flex h-11 sm:h-12 items-center justify-center rounded-[4px] bg-[#ff6b35] px-4 sm:px-6 text-[11px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors text-center leading-tight"
                 >
                   View Trex IPTV Subscription Plans

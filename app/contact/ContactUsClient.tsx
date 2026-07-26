@@ -104,7 +104,7 @@ export default function ContactUsClient() {
                 <motion.a
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  href="/installation-guide"
+                  href="/installation-guide/"
                   className="inline-flex h-11 sm:h-12 items-center justify-center gap-1 sm:gap-2 rounded-[4px] border border-zinc-300 bg-white px-2 sm:px-6 text-[9px] sm:text-sm font-bold text-zinc-900 hover:bg-zinc-50 transition-colors text-center leading-tight"
                 >
                   <BookOpen className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-zinc-500 shrink-0" />

@@ -49,9 +49,9 @@ export const metadata: Metadata = {
   authors: [{ name: SITE_NAME, url: SITE_URL }],
   creator: SITE_NAME,
   publisher: SITE_NAME,
-  alternates: {
-    canonical: `${SITE_URL}/`,
-  },
+  // Page-specific canonical + og:url live on each route (see lib/seo.ts).
+  // Do not set them here — Next.js inherits layout openGraph onto children
+  // and would make every page look like the homepage to crawlers.
   robots: {
     index: true,
     follow: true,
@@ -66,9 +66,6 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: DEFAULT_TITLE,
-    description: DEFAULT_DESCRIPTION,
-    url: `${SITE_URL}/`,
     siteName: SITE_NAME,
     locale: "en_US",
     type: "website",
@@ -76,8 +73,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: DEFAULT_TITLE,
-    description: DEFAULT_DESCRIPTION,
     images: [ogImage],
   },
   icons: {

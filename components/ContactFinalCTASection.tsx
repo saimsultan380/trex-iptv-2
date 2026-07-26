@@ -56,7 +56,7 @@ export default function ContactFinalCTASection() {
             <motion.a
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              href="/subscription-plans"
+              href="/subscription-plans/"
               className="inline-flex h-11 sm:h-12 w-full sm:w-auto items-center justify-center gap-2 rounded-[4px] border border-zinc-300 bg-white px-4 sm:px-8 text-[12px] sm:text-sm font-bold text-zinc-900 hover:bg-zinc-50 transition-colors"
             >
               View Subscription Plans

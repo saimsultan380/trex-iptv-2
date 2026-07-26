@@ -165,7 +165,7 @@ export default function ComparisonSection() {
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              href="/contact"
+              href="/contact/"
               className="inline-flex h-12 sm:h-13 items-center justify-center rounded-full bg-[#ff6b35] px-8 sm:px-12 text-[13px] sm:text-sm font-bold text-white shadow-md shadow-orange-500/25 hover:bg-[#ff5722] transition-colors"
             >
               Activate Trex IPTV →

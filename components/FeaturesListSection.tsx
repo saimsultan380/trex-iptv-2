@@ -104,7 +104,7 @@ export default function FeaturesListSection() {
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              href="/contact"
+              href="/contact/"
               className="inline-flex h-11 sm:h-12 items-center justify-center rounded-[4px] bg-[#ff6b35] px-6 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors"
             >
               Start Free Trial →
@@ -112,7 +112,7 @@ export default function FeaturesListSection() {
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              href="/subscription-plans"
+              href="/subscription-plans/"
               className="inline-flex h-11 sm:h-12 items-center justify-center rounded-[4px] border border-zinc-300 bg-white px-6 text-[13px] sm:text-sm font-bold text-zinc-950 hover:bg-zinc-50 transition-colors"
             >
               View Plans →

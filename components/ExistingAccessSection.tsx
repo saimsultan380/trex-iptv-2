@@ -107,7 +107,7 @@ export default function ExistingAccessSection() {
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              href="/reseller-panel"
+              href="/reseller-panel/"
               className="inline-flex h-12 items-center justify-center rounded-full bg-zinc-900 px-8 text-[13px] sm:text-sm font-bold text-white hover:bg-zinc-800 transition-colors whitespace-nowrap"
             >
               Become a Reseller →

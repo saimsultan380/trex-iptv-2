@@ -37,7 +37,7 @@ export default function FinalCTASection() {
             <motion.a
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              href="/contact"
+              href="/contact/"
               className="inline-flex h-12 items-center justify-center rounded-[4px] bg-[#ff6b35] px-7 sm:px-9 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors whitespace-nowrap"
             >
               Start Free Trial →

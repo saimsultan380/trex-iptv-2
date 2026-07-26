@@ -30,7 +30,7 @@ export default function NotFound() {
             </Link>
             
             <Link
-              href="/installation-guide"
+              href="/installation-guide/"
               className="w-full sm:w-auto inline-flex h-12 items-center justify-center gap-2 rounded-[4px] border border-zinc-200 bg-white px-8 text-sm font-bold text-zinc-900 hover:bg-zinc-50 transition-all"
             >
               <ArrowLeft className="h-4 w-4" />
