@@ -72,7 +72,7 @@ export default function DevicesSection() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           href="/supported-devices/"
-          className="inline-flex h-11 sm:h-12 items-center justify-center rounded-[4px] border border-zinc-300 bg-white px-6 sm:px-8 text-[13px] sm:text-sm font-bold text-zinc-950 hover:bg-zinc-50 transition-colors whitespace-nowrap"
+          className="inline-flex w-full sm:w-auto min-h-11 sm:min-h-12 h-auto items-center justify-center rounded-[4px] border border-zinc-300 bg-white px-4 py-2.5 sm:px-8 sm:py-0 text-[12px] sm:text-sm font-bold text-zinc-950 hover:bg-zinc-50 transition-colors text-center leading-snug max-w-full"
         >
           Check the Supported Devices page before purchasing.
         </motion.a>
