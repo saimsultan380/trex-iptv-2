@@ -192,7 +192,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="site-page-bg min-h-full flex flex-col">
         {children}
         <GlassScrollAnimations />
         <WhatsAppButton />

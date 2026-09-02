@@ -38,7 +38,7 @@ function faqJsonLd() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#ffffff] text-zinc-950 font-sans antialiased flex flex-col">
+    <div className="min-h-screen overflow-x-hidden site-page-bg text-zinc-950 font-sans antialiased flex flex-col">
       <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }]} />
       <script
         type="application/ld+json"

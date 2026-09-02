@@ -1,5 +1,5 @@
 .hero-cinema-stage {
-  background: #ffffff;
+  background: transparent;
   min-height: 28rem;
   max-width: 100%;
   perspective: 1400px;
@@ -198,7 +198,9 @@
 
 .hero-cinema-dock {
   align-items: center;
-  background: #ffffff;
+  background: rgba(255, 249, 247, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(16, 17, 20, 0.08);
   border-radius: 999px;
   bottom: 0.5rem;

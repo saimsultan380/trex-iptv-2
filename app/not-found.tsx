@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-white text-zinc-950 font-sans antialiased flex flex-col">
+    <div className="min-h-screen site-page-bg text-zinc-950 font-sans antialiased flex flex-col">
       <Header />
       
       <main className="flex-grow flex items-center justify-center py-20 px-6">

@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #fff9f7;
   --foreground: #171717;
+  --site-base: #fff9f7;
   --brand-orange: #ff3503;
   --brand-orange-hover: #e62e03;
   --brand-orange-soft: rgba(255, 53, 3, 0.08);
@@ -20,23 +21,31 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ffffff;
+    --background: #fff9f7;
     --foreground: #171717;
+    --site-base: #fff9f7;
   }
 }
 
+html {
+  background: var(--site-base);
+  min-height: 100%;
+}
+
 body {
-  background: var(--background);
+  background: transparent;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
 }
 
 @layer components {
+  .site-page-bg,
   .hero-warm-bg {
     background:
       radial-gradient(ellipse 80% 60% at 85% 15%, rgba(255, 53, 3, 0.1) 0%, transparent 55%),
       radial-gradient(ellipse 60% 50% at 10% 85%, rgba(255, 53, 3, 0.06) 0%, transparent 50%),
-      #ffffff;
+      var(--site-base);
   }
 
   .glass-nav {

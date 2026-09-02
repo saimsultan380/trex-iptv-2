@@ -4,7 +4,7 @@
   "description": "Premium IPTV streaming with 4K quality, multi-device support, and instant activation.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#fff9f7",
   "theme_color": "#ff3503",
   "icons": [
     {

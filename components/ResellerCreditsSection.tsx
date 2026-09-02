@@ -71,7 +71,7 @@ export default function ResellerCreditsSection() {
   )}`;
 
   return (
-    <section className="mx-auto max-w-7xl w-full px-6 py-12 sm:px-8 sm:py-16 lg:py-24 bg-white">
+    <section className="mx-auto max-w-7xl w-full px-6 py-12 sm:px-8 sm:py-16 lg:py-24">
       {/* Header */}
       <div className="text-center mb-8 sm:mb-12 max-w-3xl mx-auto">
         <motion.span

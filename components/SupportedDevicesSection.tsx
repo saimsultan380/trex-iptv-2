@@ -121,7 +121,7 @@ export default function SupportedDevicesSection() {
   return (
     <section
       id="devices"
-      className="mx-auto max-w-7xl w-full px-6 py-12 sm:px-8 sm:py-16 lg:py-24 bg-white"
+      className="mx-auto max-w-7xl w-full px-6 py-12 sm:px-8 sm:py-16 lg:py-24"
     >
       {/* Top: device list left | visual right */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-6 items-start mb-8 sm:mb-14">

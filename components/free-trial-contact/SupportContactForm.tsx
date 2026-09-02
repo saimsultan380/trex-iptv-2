@@ -43,7 +43,7 @@ export default function SupportContactForm() {
   return (
     <section
       id="support-form"
-      className="mx-auto max-w-7xl w-full px-6 sm:px-8 py-12 sm:py-16 lg:py-20 bg-white"
+      className="mx-auto max-w-7xl w-full px-6 sm:px-8 py-12 sm:py-16 lg:py-20"
     >
       <motion.div
         initial={{ opacity: 0, y: 24 }}

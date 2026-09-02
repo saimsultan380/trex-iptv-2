@@ -67,7 +67,7 @@ export default function ContactSupportSection() {
   )}`;
 
   return (
-    <section className="mx-auto max-w-7xl w-full px-6 sm:px-8 py-12 sm:py-16 lg:py-24 bg-white">
+    <section className="mx-auto max-w-7xl w-full px-6 sm:px-8 py-12 sm:py-16 lg:py-24">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
         {/* Left column */}
         <div className="lg:col-span-5 flex flex-col order-1">

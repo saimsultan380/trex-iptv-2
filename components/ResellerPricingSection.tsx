@@ -74,7 +74,7 @@ export default function ResellerPricingSection() {
   return (
     <section
       id="pricing"
-      className="mx-auto max-w-7xl w-full px-6 sm:px-8 py-12 sm:py-16 lg:py-24 bg-white overflow-hidden"
+      className="mx-auto max-w-7xl w-full px-6 sm:px-8 py-12 sm:py-16 lg:py-24 overflow-hidden"
     >
       {/* Header */}
       <motion.div

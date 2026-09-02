@@ -12,7 +12,7 @@ const plans = [
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="mx-auto max-w-7xl w-full px-6 sm:px-8 py-12 sm:py-16 lg:py-28 bg-white overflow-hidden">
+    <section id="pricing" className="mx-auto max-w-7xl w-full px-6 sm:px-8 py-12 sm:py-16 lg:py-28 overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

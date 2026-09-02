@@ -13,7 +13,7 @@ import SupportedDevicesCTA from "@/components/supported-devices/SupportedDevices
 
 export default function SupportedDevicesClient() {
   return (
-    <div className="min-h-screen bg-white text-zinc-950 font-sans antialiased flex flex-col">
+    <div className="min-h-screen site-page-bg text-zinc-950 font-sans antialiased flex flex-col">
       <Header />
 
       <main className="pt-28 pb-10 sm:pt-40 sm:pb-12 lg:pt-48 lg:pb-16">
