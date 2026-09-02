@@ -1,25 +1,10 @@
 import { Metadata } from "next";
-import ContactUsClient from "./ContactUsClient";
-import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
-import { pageMetadata } from "@/lib/seo";
+import { redirect } from "next/navigation";
 
-export const metadata: Metadata = pageMetadata({
-  title: "Contact Us for Trex IPTV Free Trial, Setup Guidance & Support",
-  description:
-    "Have a question about your Trex IPTV subscription, or want to try Trex IPTV before buying a plan? Chat with us on WhatsApp for a free 24 hour trial, setup guidance, and 24/7 support.",
-  path: "/contact/",
-});
+export const metadata: Metadata = {
+  robots: { index: false, follow: true },
+};
 
-export default function ContactUs() {
-  return (
-    <>
-      <BreadcrumbJsonLd
-        items={[
-          { name: "Home", path: "/" },
-          { name: "Contact Us", path: "/contact/" },
-        ]}
-      />
-      <ContactUsClient />
-    </>
-  );
+export default function ContactRedirectPage() {
+  redirect("/free-trial-contact/");
 }

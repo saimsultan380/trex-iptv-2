@@ -1,45 +1,39 @@
 "use client";
 
-import { WHATSAPP_NUMBER } from "@/lib/site";
-
-import Image from "next/image";
 import {
   ClipboardList,
-  CreditCard,
-  Download,
   KeyRound,
-  Play,
+  MonitorCheck,
+  ShoppingCart,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const homeSteps = [
   {
     id: "01",
-    icon: <ClipboardList className="h-5 w-5" />,
-    title: "Pick Your Plan",
+    icon: <MonitorCheck className="h-5 w-5" />,
+    title: "Confirm device support",
     description:
-      "Select a 1, 3, 6, or 12-month Trex IPTV plan and choose how many devices you need.",
+      "Confirm that your device supports an IPTV player.",
   },
   {
     id: "02",
-    icon: <CreditCard className="h-5 w-5" />,
-    title: "Complete Payment",
+    icon: <ShoppingCart className="h-5 w-5" />,
+    title: "Choose your access period",
     description:
-      "Pay securely via Card, Bank Transfer, Stripe, Wise, Google Pay, Shopify, PayPal, World Remit, or cryptocurrency. Your order will be processed immediately.",
+      "Choose your access period or request an eligible trial.",
   },
   {
     id: "03",
     icon: <KeyRound className="h-5 w-5" />,
-    title: "Receive Trex IPTV Login",
-    description:
-      "You will receive your Trex IPTV login credentials instantly via email or WhatsApp after payment.",
+    title: "Receive your account information",
+    description: "Receive your account information.",
   },
   {
     id: "04",
-    icon: <Play className="h-5 w-5" />,
-    title: "Start Watching IPTV",
-    description:
-      "Enter your Trex IPTV login details into the app and unlock channels right away.",
+    icon: <ClipboardList className="h-5 w-5" />,
+    title: "Add the login to your player",
+    description: "Add the login to your chosen player.",
   },
 ];
 
@@ -53,14 +47,14 @@ const subscriptionSteps = [
   },
   {
     id: "02",
-    icon: <CreditCard className="h-5 w-5" />,
+    icon: <ShoppingCart className="h-5 w-5" />,
     title: "Complete Your Payment",
     description:
       "Pay securely and receive your login details almost immediately.",
   },
   {
     id: "03",
-    icon: <Download className="h-5 w-5" />,
+    icon: <MonitorCheck className="h-5 w-5" />,
     title: "Install Your Preferred IPTV Player",
     description:
       "Download any compatible IPTV player app on your device.",
@@ -74,7 +68,7 @@ const subscriptionSteps = [
   },
   {
     id: "05",
-    icon: <Play className="h-5 w-5" />,
+    icon: <ClipboardList className="h-5 w-5" />,
     title: "Start Streaming Right Away",
     description:
       "Browse all the channels and enjoy buffer free streaming instantly.",
@@ -88,53 +82,32 @@ type SetupProcessSectionProps = {
 export default function SetupProcessSection({
   variant = "home",
 }: SetupProcessSectionProps = {}) {
-  const phoneNumber = WHATSAPP_NUMBER;
   const isSubscription = variant === "subscription";
   const steps = isSubscription ? subscriptionSteps : homeSteps;
   const gridCols = isSubscription
     ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5"
-    : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4";
+    : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4";
 
   return (
     <section className="mx-auto max-w-7xl w-full px-6 py-12 sm:px-8 sm:py-16 lg:py-24 bg-white">
-      {/* Header row: text left, visual right */}
-      <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 sm:gap-6 mb-8 sm:mb-16">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="flex flex-col"
-        >
-          <span className="text-[#ff6b35] text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-3 flex items-center gap-1.5">
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff6b35]" />
-            {isSubscription
-              ? "Simple Setup Process for Trex IPTV Subscription Plans"
-              : "How It Works — 4 Easy Steps"}
-          </span>
-          <h2 className="text-[26px] sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight text-zinc-900 max-w-xl">
-            Streaming With <span className="text-[#ff6b35]">Trex IPTV</span> in Under 4 Minutes
-          </h2>
-        </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="mb-8 sm:mb-14 w-full"
+      >
+        <h2 className="text-[26px] sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight text-zinc-900 mb-4">
+          How It <span className="text-[#ff6b35]">Works</span>
+        </h2>
+        {!isSubscription && (
+          <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
+            Getting started takes four steps:
+          </p>
+        )}
+      </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
-          className="w-full max-w-[180px] sm:max-w-[220px] lg:w-48 aspect-square relative shrink-0 mx-auto lg:mx-0"
-        >
-          <Image
-            src="/general.PNG"
-            alt="Trex IPTV setup process"
-            fill
-            className="object-contain"
-          />
-        </motion.div>
-      </div>
-
-      {/* Step cards with connector line */}
-      <div className="relative mb-8 sm:mb-14">
+      <div className="relative mb-8 sm:mb-10">
         <div
           className="hidden xl:block absolute top-[52px] left-[10%] right-[10%] h-px bg-[#ff6b35]/30 z-0"
           aria-hidden
@@ -148,7 +121,7 @@ export default function SetupProcessSection({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
-              className="relative flex flex-row sm:flex-col gap-3 sm:gap-0 p-3.5 sm:p-6 rounded-xl sm:rounded-2xl border border-zinc-200 bg-white hover:border-orange-200 hover:shadow-sm transition-all"
+              className="relative flex flex-row sm:flex-col gap-3 sm:gap-0 p-3.5 sm:p-6 glass-card-hover"
             >
               {index < steps.length - 1 && (
                 <div className="hidden xl:flex absolute -right-2 top-[44px] z-20 items-center justify-center w-4 h-4">
@@ -183,39 +156,21 @@ export default function SetupProcessSection({
         </div>
       </div>
 
-      {/* CTA Buttons + note */}
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
-        className="flex flex-col items-center gap-4"
-      >
-        <div className="flex flex-row flex-wrap items-center justify-center gap-3">
-          <motion.a
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent("Hi, I want to get my 24h free trial for Trex IPTV")}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-zinc-900 px-7 text-[13px] sm:text-sm font-bold text-white hover:bg-zinc-800 transition-colors whitespace-nowrap"
-          >
-            Start Free Trial →
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            href="#comparison"
-            className="inline-flex h-12 items-center justify-center rounded-full border border-zinc-300 bg-white px-7 text-[13px] sm:text-sm font-bold text-zinc-950 hover:bg-zinc-50 transition-colors whitespace-nowrap"
-          >
-            View Plans →
-          </motion.a>
-        </div>
-        <p className="text-zinc-400 text-[12px] font-medium flex items-center gap-1.5">
-          <span className="text-[#ff6b35]">✓</span> No credit card required.
-          Cancel anytime.
-        </p>
-      </motion.div>
+      {!isSubscription && (
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium"
+        >
+          The{" "}
+          <a href="/installation-guide/" className="text-[#ff6b35] font-bold hover:underline">
+            Installation Guide
+          </a>{" "}
+          explains how to connect each supported device.
+        </motion.p>
+      )}
     </section>
   );
 }

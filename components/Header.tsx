@@ -32,7 +32,7 @@ export default function Header() {
           <a href="/installation-guide/" className="hover:text-[#ff6b35] transition-colors">Installation Guide</a>
           <a href="/subscription-plans/" className="hover:text-[#ff6b35] transition-colors">Subscription Plans</a>
           <a href="/reseller-panel/" className="hover:text-[#ff6b35] transition-colors">Reseller Panel</a>
-          <a href="/contact/" className="hover:text-[#ff6b35] transition-colors">Contact Us</a>
+          <a href="/free-trial-contact/" className="hover:text-[#ff6b35] transition-colors">Contact Us</a>
         </nav>
 
         {/* Action Button */}
@@ -70,7 +70,7 @@ export default function Header() {
               <a href="/installation-guide/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#ff6b35] transition-colors">Installation Guide</a>
               <a href="/subscription-plans/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#ff6b35] transition-colors">Subscription Plans</a>
               <a href="/reseller-panel/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#ff6b35] transition-colors">Reseller Panel</a>
-              <a href="/contact/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#ff6b35] transition-colors">Contact Us</a>
+              <a href="/free-trial-contact/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#ff6b35] transition-colors">Contact Us</a>
             </nav>
             <div className="pt-6 mt-4 border-t border-zinc-100/50">
               <a href="/subscription-plans/" onClick={() => setMobileMenuOpen(false)} className="flex h-12 items-center justify-center rounded-lg bg-[#ff6b35] text-base font-bold text-white hover:bg-[#ff5722] transition-colors">

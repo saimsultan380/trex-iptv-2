@@ -68,7 +68,7 @@ export default function FeatureSection() {
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              href="/contact/"
+              href="/free-trial-contact/"
               className="inline-flex h-11 sm:h-14 items-center justify-center gap-2 sm:gap-3 rounded-[4px] bg-[#ff6b35] px-6 sm:px-8 text-[13px] sm:text-base font-bold text-white shadow-lg shadow-orange-500/20 hover:bg-[#ff5722] transition-all"
             >
               <span>Start Free Trial</span>

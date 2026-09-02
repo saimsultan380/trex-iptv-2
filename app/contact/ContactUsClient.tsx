@@ -2,7 +2,7 @@
 
 import { WHATSAPP_NUMBER } from "@/lib/site";
 
-import Image from "next/image";
+import HeroCinemaVisual from "@/components/HeroCinemaVisual";
 import { MessageCircle, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
@@ -115,24 +115,7 @@ export default function ContactUsClient() {
             </div>
 
             {/* Right Visual */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
-              className="lg:col-span-6 relative flex justify-center lg:justify-end order-2 mt-6 lg:mt-0"
-            >
-              <div className="relative w-full max-w-[280px] sm:max-w-[560px]">
-                <div className="relative w-full aspect-[1402/1122]">
-                  <Image
-                    src="/Contact Us for Trex IPTV Free Trial, Setup Guidance & Support.PNG"
-                    alt="Contact Us for Trex IPTV Free Trial, Setup Guidance and Support"
-                    fill
-                    priority
-                    className="object-contain"
-                  />
-                </div>
-              </div>
-            </motion.div>
+            <HeroCinemaVisual className="lg:col-span-6 relative flex justify-center lg:justify-end order-2 mt-6 lg:mt-0 w-full min-w-0" />
           </div>
         </div>
       </main>

@@ -1,4 +1,4 @@
-export const SITE_URL = "https://trexiptvusa.com";
+export const SITE_URL = "https://iptv-trex.us";
 export const SITE_NAME = "Trex IPTV";
 export const SITE_EMAIL = "support@trexiptvusa.com";
 
@@ -24,7 +24,7 @@ export const SITE_OG_IMAGE_WIDTH = 1200;
 export const SITE_OG_IMAGE_HEIGHT = 630;
 
 export const DEFAULT_TITLE =
-  "Trex IPTV | Trex IPTV Subscription | Trex OTT IPTV";
+  "Trex IPTV – Live TV, Movies & Series in the USA";
 
 export const DEFAULT_DESCRIPTION =
-  "Trex IPTV instant activation. Get a Trex IPTV Subscription at discounted rates. Stream unlimited channels, movies, sports & series. Works on Smart TV, Firestick, Android, iOS & many more.";
+  "Use Trex IPTV to watch live TV, movies and series on Firestick, Smart TVs, Android, iPhone and more, with setup help for U.S. viewers.";

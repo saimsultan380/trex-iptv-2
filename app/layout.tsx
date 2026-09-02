@@ -171,6 +171,22 @@ export default function RootLayout({
                   "@id": `${SITE_URL}/#organization`,
                 },
               },
+              {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "@id": `${SITE_URL}/#service`,
+                name: "Trex IPTV",
+                description: DEFAULT_DESCRIPTION,
+                provider: {
+                  "@id": `${SITE_URL}/#organization`,
+                },
+                areaServed: {
+                  "@type": "Country",
+                  name: "United States",
+                },
+                serviceType: "Internet Protocol Television (IPTV)",
+                url: `${SITE_URL}/`,
+              },
             ]),
           }}
         />

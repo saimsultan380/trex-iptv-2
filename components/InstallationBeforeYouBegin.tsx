@@ -1,39 +1,21 @@
 "use client";
 
 import {
-  CreditCard,
   Wifi,
+  Mail,
   MonitorSmartphone,
-  Download,
+  AppWindow,
+  HardDrive,
+  KeyRound,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import {
+  installationLoginTypes,
+  installationRequirements,
+} from "@/lib/installationContent";
 
-const requirements = [
-  {
-    icon: CreditCard,
-    title: "An Active Trex IPTV Subscription",
-    description:
-      "Purchase any plan, and you get your login credentials via WhatsApp or email instantly.",
-  },
-  {
-    icon: Wifi,
-    title: "A Stable Internet Connection",
-    description:
-      "At least 10 Mbps for HD streaming and 25 Mbps or above for smooth 4K playback.",
-  },
-  {
-    icon: MonitorSmartphone,
-    title: "A Compatible Device",
-    description:
-      "Any Smart TV, Firestick, Android Box, iPhone, MAG Box or Windows PC works perfectly.",
-  },
-  {
-    icon: Download,
-    title: "Your Preferred IPTV Player",
-    description:
-      "Download any supported player app on your device before starting the setup process.",
-  },
-];
+const requirementIcons = [Wifi, Mail, MonitorSmartphone, AppWindow, HardDrive];
+const loginIcons = [KeyRound, KeyRound, KeyRound];
 
 export default function InstallationBeforeYouBegin() {
   return (
@@ -43,43 +25,68 @@ export default function InstallationBeforeYouBegin() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="text-center mb-8 sm:mb-12 max-w-3xl mx-auto"
+        className="w-full mb-8 sm:mb-10"
       >
-        <span className="text-[#ff6b35] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center justify-center gap-1.5">
-          <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff6b35]" />
-          Before You Begin
-        </span>
-        <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900">
-          What You Need Before Installing{" "}
-          <span className="text-[#ff6b35]">Trex IPTV</span>?
+        <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4">
+          Before You <span className="text-[#ff6b35]">Begin</span>
         </h2>
+        <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-6">
+          You need:
+        </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
-        {requirements.map((item, index) => {
-          const Icon = item.icon;
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mb-8 sm:mb-10 w-full">
+        {installationRequirements.map((item, index) => {
+          const Icon = requirementIcons[index] ?? Wifi;
           return (
             <motion.div
-              key={item.title}
+              key={item}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.45, delay: index * 0.07, ease: "easeOut" }}
-              className="flex flex-col gap-3 p-4 sm:p-5 rounded-xl border border-zinc-200 bg-white shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:border-orange-200 hover:shadow-[0_8px_24px_rgba(255,107,53,0.08)] transition-all"
+              transition={{ duration: 0.45, delay: index * 0.06, ease: "easeOut" }}
+              className="flex items-center gap-3 px-4 py-3 glass-card-hover"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-50 border border-orange-100">
-                <Icon className="h-5 w-5 text-[#ff6b35]" />
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-[#ff6b35]">
+                <Icon className="h-5 w-5" />
               </div>
-              <h3 className="text-[13px] sm:text-[15px] font-bold text-zinc-900 leading-snug">
-                {item.title}
-              </h3>
-              <p className="text-[11px] sm:text-[13px] text-zinc-500 leading-relaxed">
-                {item.description}
-              </p>
+              <span className="text-[13px] sm:text-[14px] font-bold text-zinc-900 leading-snug">
+                {item}
+              </span>
             </motion.div>
           );
         })}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="w-full"
+      >
+        <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-4">
+          Your login may arrive as:
+        </p>
+        <div className="space-y-3 mb-6">
+          {installationLoginTypes.map((item, index) => {
+            const Icon = loginIcons[index] ?? KeyRound;
+            return (
+              <div key={item} className="flex items-center gap-3 px-4 py-3 glass-card-hover">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ff6b35]">
+                  <Icon className="h-5 w-5" />
+                </div>
+                <span className="text-[13px] sm:text-[14px] font-medium text-zinc-700 leading-relaxed">
+                  {item}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+        <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
+          Enter the details exactly as provided. Do not add spaces, change capital letters or publish the information.
+        </p>
+      </motion.div>
     </section>
   );
 }

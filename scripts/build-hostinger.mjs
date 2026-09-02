@@ -5,7 +5,6 @@ import { fileURLToPath } from "node:url";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const outDir = path.join(root, "out");
-const nextDir = path.join(root, ".next");
 
 function removeDir(dir) {
   if (!fs.existsSync(dir)) return;
@@ -17,7 +16,6 @@ console.log("Preparing static export for Hostinger...\n");
 
 // Always wipe old output so deleted pages/images never linger in out/
 removeDir(outDir);
-removeDir(nextDir);
 
 process.env.STATIC_EXPORT = "true";
 

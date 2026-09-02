@@ -20,7 +20,7 @@ export default function InstallationCTASection() {
         <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-[#ff6b35]/8 blur-[100px]" />
 
         <div className="relative z-10 flex flex-col items-center">
-          <h2 className="text-[22px] sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-zinc-900 mb-4 max-w-4xl">
+          <h2 className="text-[22px] sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-zinc-900 mb-4 w-full">
             READY TO STREAM SMARTER WITH{" "}
             <span className="text-[#ff6b35]">TREX IPTV</span>?
           </h2>

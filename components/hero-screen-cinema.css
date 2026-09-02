@@ -1,0 +1,459 @@
+.hero-cinema-stage {
+  background: #ffffff;
+  min-height: 28rem;
+  max-width: 100%;
+  perspective: 1400px;
+  position: relative;
+  width: 100%;
+}
+
+.hero-cinema-line {
+  border: 1px solid rgba(16, 17, 20, 0.1);
+  border-radius: 50%;
+  height: 10rem;
+  left: -3%;
+  position: absolute;
+  right: -5%;
+  top: 42%;
+  transform: rotate(-8deg);
+}
+
+.hero-cinema-line > span {
+  animation: heroCinemaRailPulse 3s ease-in-out infinite;
+  background: #ff6b35;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(255, 107, 53, 0.45);
+  height: 1.05rem;
+  left: 15%;
+  position: absolute;
+  top: -0.5rem;
+  width: 1.05rem;
+}
+
+.hero-cinema-screen {
+  background: #111215;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 1.8rem;
+  box-shadow: 0 34px 75px rgba(24, 24, 26, 0.21);
+  color: #ffffff;
+  height: 22rem;
+  overflow: hidden;
+  padding: 1.2rem;
+  position: absolute;
+  width: 15rem;
+}
+
+.hero-cinema-screen.screen-live {
+  animation: heroCinemaFloatOne 6s ease-in-out infinite;
+  left: 0;
+  top: 18%;
+  transform: rotateY(12deg) rotateZ(-4deg);
+}
+
+.hero-cinema-screen.screen-movies {
+  animation: heroCinemaFloatTwo 6.8s ease-in-out infinite;
+  left: 50%;
+  margin-left: -7.5rem;
+  top: 5%;
+  transform: translateZ(1rem) rotateZ(1deg);
+  z-index: 3;
+}
+
+.hero-cinema-screen.screen-series {
+  animation: heroCinemaFloatThree 6.3s ease-in-out infinite;
+  left: auto;
+  right: 0;
+  top: 20%;
+  transform: rotateY(-12deg) rotateZ(4deg);
+  z-index: 2;
+}
+
+.hero-cinema-glow {
+  background: radial-gradient(
+    circle at 50% 60%,
+    rgba(255, 99, 54, 0.9),
+    rgba(255, 107, 53, 0.24) 32%,
+    transparent 64%
+  );
+  filter: blur(8px);
+  inset: 16% -18% -4%;
+  position: absolute;
+}
+
+.hero-cinema-screen.screen-movies .hero-cinema-glow {
+  background: radial-gradient(
+    circle at 50% 55%,
+    rgba(255, 186, 155, 0.72),
+    rgba(255, 107, 53, 0.28) 32%,
+    transparent 67%
+  );
+}
+
+.hero-cinema-screen.screen-series .hero-cinema-glow {
+  background: radial-gradient(
+    circle at 48% 55%,
+    rgba(255, 91, 47, 0.62),
+    rgba(88, 35, 22, 0.4) 37%,
+    transparent 68%
+  );
+}
+
+.hero-cinema-topline {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-cinema-topline > span {
+  align-items: center;
+  display: flex;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.61rem;
+  gap: 0.45rem;
+  letter-spacing: 0.16em;
+}
+
+.hero-cinema-topline > span::before {
+  background: #ff6b35;
+  border-radius: 999px;
+  box-shadow: 0 0 12px #ff6b35;
+  content: "";
+  height: 0.42rem;
+  width: 0.42rem;
+}
+
+.hero-cinema-topline i {
+  color: rgba(255, 255, 255, 0.3);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.63rem;
+  font-style: normal;
+}
+
+.hero-cinema-icon {
+  align-items: center;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  display: flex;
+  height: 4.5rem;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 43%;
+  transform: translate(-50%, -50%);
+  width: 4.5rem;
+  z-index: 2;
+}
+
+.hero-cinema-icon svg {
+  height: 1.65rem;
+  width: 1.65rem;
+}
+
+.hero-cinema-copy {
+  bottom: 3.5rem;
+  display: grid;
+  gap: 0.35rem;
+  left: 1.2rem;
+  position: absolute;
+  right: 1.2rem;
+  z-index: 2;
+}
+
+.hero-cinema-copy small {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero-cinema-copy strong {
+  font-size: 1.15rem;
+  letter-spacing: -0.035em;
+}
+
+.hero-cinema-progress {
+  background: rgba(255, 255, 255, 0.16);
+  bottom: 1.4rem;
+  height: 2px;
+  left: 1.2rem;
+  position: absolute;
+  right: 1.2rem;
+  z-index: 2;
+}
+
+.hero-cinema-progress > span {
+  animation: heroCinemaProgressFlow 4.2s ease-in-out infinite alternate;
+  background: #ff6b35;
+  box-shadow: 0 0 9px #ff6b35;
+  display: block;
+  height: 100%;
+  width: 62%;
+}
+
+.hero-cinema-dock {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(16, 17, 20, 0.08);
+  border-radius: 999px;
+  bottom: 0.5rem;
+  box-shadow: 0 20px 50px rgba(20, 20, 22, 0.1);
+  display: flex;
+  gap: 0.5rem;
+  left: 50%;
+  padding: 0.45rem;
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 6;
+}
+
+.hero-cinema-dock > span {
+  align-items: center;
+  border-radius: 999px;
+  color: #5e5f64;
+  display: flex;
+  font-size: 0.69rem;
+  font-weight: 650;
+  gap: 0.35rem;
+  padding: 0.55rem 0.7rem;
+}
+
+.hero-cinema-dock > span:first-child {
+  background: #141518;
+  color: #ffffff;
+}
+
+.hero-cinema-dock svg {
+  height: 0.9rem;
+  width: 0.9rem;
+}
+
+@keyframes heroCinemaRailPulse {
+  0%,
+  100% {
+    transform: scale(0.78);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes heroCinemaFloatOne {
+  0%,
+  100% {
+    transform: rotateY(12deg) rotateZ(-4deg) translateY(0);
+  }
+
+  50% {
+    transform: rotateY(12deg) rotateZ(-3deg) translateY(-12px);
+  }
+}
+
+@keyframes heroCinemaFloatTwo {
+  0%,
+  100% {
+    transform: translateZ(1rem) rotateZ(1deg) translateY(0);
+  }
+
+  50% {
+    transform: translateZ(1rem) rotateZ(0deg) translateY(-15px);
+  }
+}
+
+@keyframes heroCinemaFloatThree {
+  0%,
+  100% {
+    transform: rotateY(-12deg) rotateZ(4deg) translateY(0);
+  }
+
+  50% {
+    transform: rotateY(-12deg) rotateZ(3deg) translateY(-9px);
+  }
+}
+
+@keyframes heroCinemaProgressFlow {
+  from {
+    width: 38%;
+  }
+
+  to {
+    width: 82%;
+  }
+}
+
+@media (min-width: 640px) {
+  .hero-cinema-stage {
+    min-height: 30rem;
+  }
+
+  .hero-cinema-screen {
+    height: 20rem;
+    width: 13rem;
+  }
+
+  .hero-cinema-screen.screen-movies {
+    margin-left: -6.5rem;
+    top: 6%;
+  }
+
+  .hero-cinema-copy strong {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-cinema-stage {
+    min-height: 28rem;
+  }
+
+  .hero-cinema-line {
+    height: 7.5rem;
+    left: 0;
+    right: 0;
+    top: 44%;
+  }
+
+  .hero-cinema-screen {
+    height: 18rem;
+    width: 11.5rem;
+    padding: 1rem;
+    border-radius: 1.4rem;
+    box-shadow: 0 24px 50px rgba(24, 24, 26, 0.16);
+  }
+
+  .hero-cinema-screen.screen-live {
+    left: 0;
+    top: 20%;
+  }
+
+  .hero-cinema-screen.screen-movies {
+    margin-left: -5.75rem;
+    top: 6%;
+    transform: translateZ(1rem) rotateZ(1deg);
+  }
+
+  .hero-cinema-screen.screen-series {
+    right: 0;
+    top: 20%;
+  }
+
+  .hero-cinema-copy {
+    bottom: 3rem;
+    left: 1rem;
+    right: 1rem;
+  }
+
+  .hero-cinema-copy strong {
+    font-size: 1rem;
+  }
+
+  .hero-cinema-copy small {
+    font-size: 0.58rem;
+  }
+
+  .hero-cinema-icon {
+    height: 3.4rem;
+    width: 3.4rem;
+  }
+
+  .hero-cinema-icon svg {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  .hero-cinema-dock {
+    bottom: 0.25rem;
+    padding: 0.35rem;
+  }
+
+  .hero-cinema-dock > span {
+    font-size: 0.62rem;
+    padding: 0.45rem 0.6rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .hero-cinema-stage {
+    min-height: 26rem;
+  }
+
+  .hero-cinema-screen {
+    border-radius: 1.35rem;
+    height: 16.5rem;
+    padding: 0.9rem;
+    width: 10.2rem;
+  }
+
+  .hero-cinema-screen.screen-live {
+    left: 0;
+    top: 20%;
+  }
+
+  .hero-cinema-screen.screen-movies {
+    left: 50%;
+    margin-left: -5.1rem;
+    top: 9%;
+  }
+
+  .hero-cinema-screen.screen-series {
+    left: auto;
+    right: 0;
+    top: 22%;
+  }
+
+  .hero-cinema-icon {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  .hero-cinema-icon svg {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  .hero-cinema-copy {
+    bottom: 2.8rem;
+    left: 0.9rem;
+    right: 0.9rem;
+  }
+
+  .hero-cinema-copy strong {
+    font-size: 0.82rem;
+  }
+
+  .hero-cinema-copy small {
+    font-size: 0.52rem;
+  }
+
+  .hero-cinema-progress {
+    bottom: 1rem;
+    left: 0.9rem;
+    right: 0.9rem;
+  }
+
+  .hero-cinema-dock {
+    bottom: 0;
+  }
+
+  .hero-cinema-dock > span {
+    font-size: 0.58rem;
+    padding: 0.45rem 0.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-cinema-stage *,
+  .hero-cinema-line > span,
+  .hero-cinema-progress > span {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
