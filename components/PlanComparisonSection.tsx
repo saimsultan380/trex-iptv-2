@@ -140,14 +140,14 @@ export default function PlanComparisonSection() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="mb-8 sm:mb-12 max-w-3xl mx-auto text-center"
       >
-        <span className="inline-flex items-center justify-center gap-1.5 text-[#ff6b35] text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-3">
+        <span className="inline-flex items-center justify-center gap-1.5 text-[#ff3503] text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-3">
           TREX IPTV
           <ChevronRight className="h-3.5 w-3.5" />
         </span>
 
         <h2 className="text-[24px] sm:text-4xl lg:text-[44px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-3 sm:mb-4">
           Choose a Trex IPTV Subscription Plan According to Your{" "}
-          <span className="text-[#ff6b35]">Requirements &amp; Needs</span>
+          <span className="text-[#ff3503]">Requirements &amp; Needs</span>
         </h2>
 
         <p className="text-zinc-500 text-[13px] sm:text-[15px] leading-relaxed mb-5 sm:mb-6">
@@ -159,7 +159,7 @@ export default function PlanComparisonSection() {
             const Icon = badge.icon;
             return (
               <div key={i} className="flex items-center justify-center gap-2">
-                <Icon className="h-4 w-4 text-[#ff6b35] shrink-0" />
+                <Icon className="h-4 w-4 text-[#ff3503] shrink-0" />
                 <span className="text-[12px] sm:text-[13px] font-semibold text-zinc-800">
                   {badge.label}
                 </span>
@@ -177,7 +177,7 @@ export default function PlanComparisonSection() {
             onClick={() => setCurrency("eur")}
             className={`px-5 py-1.5 rounded-full text-[12px] sm:text-[13px] font-bold transition-all duration-200 ${
               currency === "eur"
-                ? "bg-[#ff6b35] text-white shadow-sm"
+                ? "bg-[#ff3503] text-white shadow-sm"
                 : "text-zinc-500 hover:text-zinc-800"
             }`}
           >
@@ -188,7 +188,7 @@ export default function PlanComparisonSection() {
             onClick={() => setCurrency("usd")}
             className={`px-5 py-1.5 rounded-full text-[12px] sm:text-[13px] font-bold transition-all duration-200 ${
               currency === "usd"
-                ? "bg-[#ff6b35] text-white shadow-sm"
+                ? "bg-[#ff3503] text-white shadow-sm"
                 : "text-zinc-500 hover:text-zinc-800"
             }`}
           >
@@ -210,12 +210,12 @@ export default function PlanComparisonSection() {
             transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
             className={`relative flex flex-col w-full max-w-[300px] sm:max-w-none rounded-2xl border bg-white p-5 sm:p-6 transition-all duration-300 ${
               plan.recommended
-                ? "border-[#ff6b35] shadow-[0_16px_48px_rgba(255,107,53,0.12)]"
+                ? "border-[#ff3503] shadow-[0_16px_48px_rgba(255,53,3,0.12)]"
                 : "border-zinc-200 shadow-sm hover:border-orange-200 hover:shadow-md"
             }`}
           >
             {plan.recommended && (
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#ff6b35] text-white text-[10px] sm:text-[11px] font-extrabold px-3 py-1 rounded-full shadow-sm whitespace-nowrap z-10">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#ff3503] text-white text-[10px] sm:text-[11px] font-extrabold px-3 py-1 rounded-full shadow-sm whitespace-nowrap z-10">
                 ★ BEST VALUE
               </div>
             )}
@@ -232,7 +232,7 @@ export default function PlanComparisonSection() {
                 initial={{ opacity: 0, y: -6 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.2 }}
-                className={`text-[28px] sm:text-[34px] font-extrabold leading-none ${plan.recommended ? "text-[#ff6b35]" : "text-[#ff6b35]"}`}
+                className={`text-[28px] sm:text-[34px] font-extrabold leading-none ${plan.recommended ? "text-[#ff3503]" : "text-[#ff3503]"}`}
               >
                 {symbol}{amount}
               </motion.p>
@@ -240,7 +240,7 @@ export default function PlanComparisonSection() {
 
             {/* Guarantee */}
             <div className="flex items-center justify-center gap-1.5 mb-5 py-1.5 px-2 rounded-md bg-orange-50/80 border border-orange-100">
-              <ShieldCheck className="h-3.5 w-3.5 text-[#ff6b35] shrink-0" />
+              <ShieldCheck className="h-3.5 w-3.5 text-[#ff3503] shrink-0" />
               <span className="text-[10px] sm:text-[11px] font-semibold text-zinc-500">
                 30 Day Risk-Free Guarantee
               </span>
@@ -250,7 +250,7 @@ export default function PlanComparisonSection() {
             <div className="space-y-2.5 mb-5 flex-grow">
               {plan.features.map((feature) => (
                 <div key={feature} className="flex items-center gap-2">
-                  <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-orange-50 text-[#ff6b35]">
+                  <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-orange-50 text-[#ff3503]">
                     {featureIcons[feature]}
                   </div>
                   <span className="text-[11px] sm:text-[12px] text-zinc-600 font-medium leading-snug">
@@ -262,13 +262,13 @@ export default function PlanComparisonSection() {
 
             {/* Best for */}
             <div className="mb-5 pt-4 border-t border-zinc-100">
-              <p className="text-[11px] sm:text-xs font-bold text-[#ff6b35] uppercase tracking-wide mb-2.5">
+              <p className="text-[11px] sm:text-xs font-bold text-[#ff3503] uppercase tracking-wide mb-2.5">
                 Best For:
               </p>
               <ul className="space-y-2">
                 {plan.bestFor.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <div className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-orange-50 text-[#ff6b35] mt-0.5">
+                    <div className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-orange-50 text-[#ff3503] mt-0.5">
                       <Check className="h-2.5 w-2.5 stroke-[3]" />
                     </div>
                     <span className="text-[11px] sm:text-[12px] text-zinc-600 font-medium leading-snug">
@@ -287,8 +287,8 @@ export default function PlanComparisonSection() {
               rel="noopener noreferrer"
               className={`flex items-center justify-between h-11 w-full rounded-lg px-4 text-[12px] sm:text-[13px] font-bold transition-all ${
                 plan.recommended
-                  ? "bg-[#ff6b35] text-white hover:bg-[#ff5722] shadow-md shadow-orange-500/20"
-                  : "bg-white text-[#ff6b35] border border-[#ff6b35] hover:bg-orange-50"
+                  ? "bg-[#ff3503] text-white hover:bg-[#e62e03] shadow-md shadow-orange-500/20"
+                  : "bg-white text-[#ff3503] border border-[#ff3503] hover:bg-orange-50"
               }`}
             >
               <span>Activate Now</span>

@@ -23,7 +23,7 @@ export default function TrialSection() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-zinc-900 mb-4 sm:mb-6">
-          Try It on Your Own <span className="text-[#ff6b35]">Device</span>
+          Try It on Your Own <span className="text-[#ff3503]">Device</span>
         </h2>
 
         <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-3">
@@ -43,7 +43,7 @@ export default function TrialSection() {
               transition={{ duration: 0.4, delay: i * 0.06, ease: "easeOut" }}
               className="flex items-center gap-3 px-4 py-3 glass-card-hover"
             >
-              <CheckCircle2 className="h-5 w-5 text-[#ff6b35] shrink-0" />
+              <CheckCircle2 className="h-5 w-5 text-[#ff3503] shrink-0" />
               <span className="text-[13px] sm:text-[14px] font-bold text-zinc-900">
                 {item}
               </span>
@@ -64,7 +64,7 @@ export default function TrialSection() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           href="/free-trial-contact/"
-          className="inline-flex h-12 items-center justify-center rounded-[4px] bg-[#ff6b35] px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors"
+          className="inline-flex h-12 items-center justify-center rounded-[4px] bg-[#ff3503] px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff3503] transition-colors"
         >
           Request a Free Trial
         </motion.a>

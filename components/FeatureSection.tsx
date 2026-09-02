@@ -12,11 +12,11 @@ export default function FeatureSection() {
         
         {/* Left Content Column */}
         <div className="lg:col-span-6 flex flex-col order-1">
-          <span className="text-[#ff6b35] text-xs sm:text-sm font-bold tracking-wider uppercase mb-2 sm:mb-3">
+          <span className="text-[#ff3503] text-xs sm:text-sm font-bold tracking-wider uppercase mb-2 sm:mb-3">
             IPTV STREAMING MADE SIMPLE
           </span>
           <h2 className="text-[24px] sm:text-4xl lg:text-[44px] font-bold tracking-tight leading-tight text-zinc-900 mb-4 sm:mb-6">
-            IPTV Streaming Made Simple With <span className="text-[#ff6b35]">Trex IPTV</span>
+            IPTV Streaming Made Simple With <span className="text-[#ff3503]">Trex IPTV</span>
           </h2>
           <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-5 sm:mb-10 max-w-xl">
             Trex IPTV gives you one simple dashboard to access everything you want to watch. After the subscription is activated, you can stream directly to your screen within 5 minutes using your Trex IPTV login credentials. We provide a free Trex IPTV installation guide, 24/7 support, easy setups, and you do not require any technical knowledge.
@@ -25,7 +25,7 @@ export default function FeatureSection() {
           <div className="space-y-3 sm:space-y-8">
             {/* Feature 1 */}
             <div className="flex gap-4 sm:gap-5">
-              <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full border border-zinc-100 bg-white shadow-sm text-[#ff6b35]">
+              <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full border border-zinc-100 bg-white shadow-sm text-[#ff3503]">
                 <Link2 className="h-5 w-5 sm:h-6 sm:w-6" />
               </div>
               <div>
@@ -38,7 +38,7 @@ export default function FeatureSection() {
 
             {/* Feature 2 */}
             <div className="flex gap-4 sm:gap-5">
-              <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full border border-zinc-100 bg-white shadow-sm text-[#ff6b35]">
+              <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full border border-zinc-100 bg-white shadow-sm text-[#ff3503]">
                 <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />
               </div>
               <div>
@@ -51,7 +51,7 @@ export default function FeatureSection() {
 
             {/* Feature 3 */}
             <div className="flex gap-4 sm:gap-5">
-              <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full border border-zinc-100 bg-white shadow-sm text-[#ff6b35]">
+              <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full border border-zinc-100 bg-white shadow-sm text-[#ff3503]">
                 <PlayCircle className="h-5 w-5 sm:h-6 sm:w-6" />
               </div>
               <div>
@@ -69,7 +69,7 @@ export default function FeatureSection() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               href="/free-trial-contact/"
-              className="inline-flex h-11 sm:h-14 items-center justify-center gap-2 sm:gap-3 rounded-[4px] bg-[#ff6b35] px-6 sm:px-8 text-[13px] sm:text-base font-bold text-white shadow-lg shadow-orange-500/20 hover:bg-[#ff5722] transition-all"
+              className="inline-flex h-11 sm:h-14 items-center justify-center gap-2 sm:gap-3 rounded-full bg-[#ff3503] btn-brand-animated px-6 sm:px-8 text-[13px] sm:text-base font-bold text-white shadow-lg shadow-orange-500/20 hover:bg-[#e62e03] transition-all"
             >
               <span>Start Free Trial</span>
             </motion.a>

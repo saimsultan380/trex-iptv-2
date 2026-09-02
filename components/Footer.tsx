@@ -54,7 +54,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-zinc-500 hover:text-[#ff6b35] text-[14px] font-semibold transition-colors"
+                    className="text-zinc-500 hover:text-[#ff3503] text-[14px] font-semibold transition-colors"
                   >
                     {link.label}
                   </a>
@@ -72,7 +72,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-zinc-500 hover:text-[#ff6b35] text-[14px] font-semibold transition-colors"
+                    className="text-zinc-500 hover:text-[#ff3503] text-[14px] font-semibold transition-colors"
                   >
                     {link.label}
                   </a>
@@ -88,7 +88,7 @@ export default function Footer() {
             <div className="flex flex-col gap-6">
               <a
                 href={`mailto:${SITE_EMAIL}`}
-                className="inline-flex items-center gap-2 text-zinc-900 hover:text-[#ff6b35] text-[14px] font-bold transition-colors"
+                className="inline-flex items-center gap-2 text-zinc-900 hover:text-[#ff3503] text-[14px] font-bold transition-colors"
               >
                 <Mail className="h-4 w-4" />
                 {SITE_EMAIL}
@@ -96,7 +96,7 @@ export default function Footer() {
 
               <a
                 href="/free-trial-contact/"
-                className="inline-flex h-11 items-center justify-center rounded-[4px] bg-[#ff6b35] px-6 text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors w-fit"
+                className="inline-flex h-11 items-center justify-center rounded-full bg-[#ff3503] btn-brand-animated px-6 text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors w-fit"
               >
                 Free Trial &amp; Support
               </a>

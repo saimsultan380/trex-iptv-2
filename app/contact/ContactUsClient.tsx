@@ -38,7 +38,7 @@ export default function ContactUsClient() {
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 className="text-[26px] sm:text-5xl lg:text-[48px] font-bold tracking-tight leading-[1.12] text-zinc-950 mb-4 sm:mb-6"
               >
-                Contact Us for <span className="text-[#ff6b35]">Trex IPTV</span> Free Trial, Setup Guidance &amp; Support
+                Contact Us for <span className="text-[#ff3503]">Trex IPTV</span> Free Trial, Setup Guidance &amp; Support
               </motion.h1>
 
               <motion.p
@@ -81,7 +81,7 @@ export default function ContactUsClient() {
                   href={trialHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex h-11 sm:h-12 items-center justify-center gap-1 sm:gap-2 rounded-[4px] bg-[#ff6b35] px-2 sm:px-6 text-[9px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors text-center leading-tight"
+                  className="inline-flex h-11 sm:h-12 items-center justify-center gap-1 sm:gap-2 rounded-full bg-[#ff3503] btn-brand-animated px-2 sm:px-6 text-[9px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors text-center leading-tight"
                 >
                   <MessageCircle className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
                   <span className="sm:hidden">Free Trial</span>
@@ -94,7 +94,7 @@ export default function ContactUsClient() {
                   href={supportHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex h-11 sm:h-12 items-center justify-center gap-1 sm:gap-2 rounded-[4px] border border-[#ff6b35] bg-white px-2 sm:px-6 text-[9px] sm:text-sm font-bold text-[#ff6b35] hover:bg-orange-50 transition-colors text-center leading-tight"
+                  className="inline-flex h-11 sm:h-12 items-center justify-center gap-1 sm:gap-2 rounded-[4px] border border-[#ff3503] bg-white px-2 sm:px-6 text-[9px] sm:text-sm font-bold text-[#ff3503] hover:bg-orange-50 transition-colors text-center leading-tight"
                 >
                   <MessageCircle className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-green-500 shrink-0" />
                   <span className="sm:hidden">WhatsApp</span>

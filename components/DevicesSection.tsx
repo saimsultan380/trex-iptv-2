@@ -37,7 +37,7 @@ export default function DevicesSection() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-zinc-900 mb-3 sm:mb-4">
-          Watch on Your Preferred <span className="text-[#ff6b35]">Device</span>
+          Watch on Your Preferred <span className="text-[#ff3503]">Device</span>
         </h2>
 
         <p className="text-zinc-500 text-[12px] sm:text-[14px] leading-relaxed mb-5 sm:mb-8">
@@ -54,7 +54,7 @@ export default function DevicesSection() {
               transition={{ duration: 0.35, delay: i * 0.04, ease: "easeOut" }}
               className="flex items-center gap-3 px-4 py-3 glass-card-hover"
             >
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-50 border border-orange-100 text-[#ff6b35]">
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-50 border border-orange-100 text-[#ff3503]">
                 {device.icon}
               </div>
               <h4 className="text-[12px] sm:text-[14px] font-bold text-zinc-900 leading-tight">

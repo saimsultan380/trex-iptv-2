@@ -67,16 +67,16 @@ export default function WhyChooseResellerPanelSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="lg:col-span-5 flex flex-col text-center lg:text-left lg:sticky lg:top-28"
         >
-          <span className="text-[#ff6b35] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center justify-center lg:justify-start gap-1.5">
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff6b35]" />
+          <span className="text-[#ff3503] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center justify-center lg:justify-start gap-1.5">
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff3503]" />
             Why Choose Us
           </span>
 
           <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4">
-            Why Choose <span className="text-[#ff6b35]">Trex IPTV</span> Reseller Panel?
+            Why Choose <span className="text-[#ff3503]">Trex IPTV</span> Reseller Panel?
           </h2>
 
-          <div className="w-10 h-1 bg-[#ff6b35] rounded-full mb-4 mx-auto lg:mx-0" />
+          <div className="w-10 h-1 bg-[#ff3503] rounded-full mb-4 mx-auto lg:mx-0" />
 
           <p className="text-zinc-500 text-[13px] sm:text-[15px] leading-relaxed max-w-lg mx-auto lg:mx-0">
             Running an IPTV reseller business is easy when you have the right panel behind you. Trex IPTV gives you everything you need to start, manage, and grow your business without any tension.
@@ -94,14 +94,14 @@ export default function WhyChooseResellerPanelSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: index * 0.06, ease: "easeOut" }}
-                className="flex items-start gap-3 sm:gap-4 p-3.5 sm:p-5 rounded-xl border border-zinc-100 bg-white shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:border-orange-100 hover:shadow-[0_8px_24px_rgba(255,107,53,0.08)] transition-all duration-300"
+                className="flex items-start gap-3 sm:gap-4 p-3.5 sm:p-5 rounded-xl border border-zinc-100 bg-white shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:border-orange-100 hover:shadow-[0_8px_24px_rgba(255,53,3,0.08)] transition-all duration-300"
               >
                 <div className="flex flex-col items-center gap-1.5 shrink-0">
-                  <span className="text-[11px] sm:text-xs font-extrabold text-[#ff6b35]/70 leading-none">
+                  <span className="text-[11px] sm:text-xs font-extrabold text-[#ff3503]/70 leading-none">
                     {reason.id}.
                   </span>
                   <div className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full bg-orange-50 border border-orange-100">
-                    <Icon className="h-5 w-5 text-[#ff6b35]" />
+                    <Icon className="h-5 w-5 text-[#ff3503]" />
                   </div>
                 </div>
 

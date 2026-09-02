@@ -67,9 +67,9 @@ export default function ResellerSetupSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="text-[#ff6b35] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center gap-1.5"
+            className="text-[#ff3503] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center gap-1.5"
           >
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff6b35]" />
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff3503]" />
             Reseller Setup
           </motion.span>
 
@@ -81,7 +81,7 @@ export default function ResellerSetupSection() {
             className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4"
           >
             Trex IPTV Reseller Setup{" "}
-            <span className="text-[#ff6b35]">Complete Process</span>
+            <span className="text-[#ff3503]">Complete Process</span>
           </motion.h2>
 
           <motion.p
@@ -105,14 +105,14 @@ export default function ResellerSetupSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.45, delay: index * 0.07, ease: "easeOut" }}
-                  className="flex items-start gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-xl border border-zinc-100 bg-white shadow-[0_2px_10px_rgba(0,0,0,0.03)] hover:border-orange-100 hover:shadow-[0_6px_20px_rgba(255,107,53,0.08)] transition-all duration-300"
+                  className="flex items-start gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-xl border border-zinc-100 bg-white shadow-[0_2px_10px_rgba(0,0,0,0.03)] hover:border-orange-100 hover:shadow-[0_6px_20px_rgba(255,53,3,0.08)] transition-all duration-300"
                 >
                   <div className="flex h-10 w-10 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-full bg-orange-50 border border-orange-100">
-                    <Icon className="h-5 w-5 text-[#ff6b35]" />
+                    <Icon className="h-5 w-5 text-[#ff3503]" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-baseline gap-2 mb-0.5 sm:mb-1 flex-wrap">
-                      <span className="text-[11px] sm:text-xs font-extrabold text-[#ff6b35]/70">
+                      <span className="text-[11px] sm:text-xs font-extrabold text-[#ff3503]/70">
                         {step.id}.
                       </span>
                       <h3 className="text-[13px] sm:text-[15px] font-bold text-zinc-900 leading-snug">
@@ -138,7 +138,7 @@ export default function ResellerSetupSection() {
             href={whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-11 sm:h-12 items-center justify-center gap-2 rounded-[4px] bg-[#ff6b35] px-6 sm:px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors self-start w-full sm:w-auto"
+            className="inline-flex h-11 sm:h-12 items-center justify-center gap-2 rounded-full bg-[#ff3503] btn-brand-animated px-6 sm:px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors self-start w-full sm:w-auto"
           >
             Contact Us to Get Your Reseller Panel Now
             <ChevronRight className="h-4 w-4" />

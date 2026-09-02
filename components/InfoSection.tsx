@@ -30,7 +30,7 @@ export default function InfoSection() {
       >
         <h2 className="text-[26px] sm:text-5xl lg:text-[56px] font-bold tracking-tight leading-tight text-zinc-900 mb-4 sm:mb-6">
           What Is{" "}
-          <span className="text-[#ff6b35]">Trex</span> IPTV?
+          <span className="text-[#ff3503]">Trex</span> IPTV?
         </h2>
 
         <div className="space-y-3 mb-6 sm:mb-8">
@@ -45,7 +45,7 @@ export default function InfoSection() {
           </p>
         </div>
 
-        <div className="space-y-3 mb-6 sm:mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8">
           {loginTypes.map((item, i) => (
             <motion.div
               key={i}
@@ -55,7 +55,7 @@ export default function InfoSection() {
               transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
               className="flex items-center gap-3 px-4 py-3 glass-card-hover"
             >
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ff6b35]">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ff3503]">
                 {item.icon}
               </div>
               <span className="text-[13px] sm:text-[14px] font-bold text-zinc-900">

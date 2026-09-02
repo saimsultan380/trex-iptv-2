@@ -20,17 +20,17 @@ export default function ResellerFinalCTASection() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="relative overflow-hidden rounded-2xl sm:rounded-3xl border border-zinc-200 bg-white px-6 py-10 sm:px-14 sm:py-20 text-center shadow-[0_8px_40px_rgba(0,0,0,0.04)]"
       >
-        <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-[#ff6b35]/8 blur-[100px]" />
+        <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-[#ff3503]/8 blur-[100px]" />
 
         <div className="relative z-10 flex flex-col items-center">
-          <span className="inline-flex items-center gap-1.5 text-[#ff6b35] text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-4 sm:mb-5 px-3 py-1.5 rounded-full border border-[#ff6b35]/30 bg-[#ff6b35]/10">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ff6b35] inline-block animate-pulse shrink-0" />
+          <span className="inline-flex items-center gap-1.5 text-[#ff3503] text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-4 sm:mb-5 px-3 py-1.5 rounded-full border border-[#ff3503]/30 bg-[#ff3503]/10">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ff3503] inline-block animate-pulse shrink-0" />
             Ready to Start Earning
           </span>
 
           <h2 className="text-[22px] sm:text-4xl lg:text-[44px] font-extrabold tracking-tight leading-tight text-zinc-900 mb-4 sm:mb-5 max-w-3xl">
             Ready to Start Earning With{" "}
-            <span className="text-[#ff6b35]">Trex IPTV</span>?
+            <span className="text-[#ff3503]">Trex IPTV</span>?
           </h2>
 
           <p className="text-zinc-600 text-[13px] sm:text-[16px] leading-relaxed max-w-2xl mb-6 sm:mb-8">
@@ -42,7 +42,7 @@ export default function ResellerFinalCTASection() {
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               href="#pricing"
-              className="inline-flex h-11 sm:h-12 items-center justify-center gap-2 rounded-[4px] bg-[#ff6b35] px-4 sm:px-8 text-[11px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors whitespace-nowrap"
+              className="inline-flex h-11 sm:h-12 items-center justify-center gap-2 rounded-full bg-[#ff3503] btn-brand-animated px-4 sm:px-8 text-[11px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors whitespace-nowrap"
             >
               View Reseller Plans
               <ChevronRight className="h-4 w-4 shrink-0" />
@@ -56,7 +56,7 @@ export default function ResellerFinalCTASection() {
               rel="noopener noreferrer"
               className="inline-flex h-11 sm:h-12 items-center justify-center gap-2 rounded-[4px] border border-zinc-300 bg-white px-4 sm:px-8 text-[11px] sm:text-sm font-bold text-zinc-900 hover:bg-zinc-50 transition-colors whitespace-nowrap"
             >
-              <UserPlus className="h-4 w-4 text-[#ff6b35] shrink-0" />
+              <UserPlus className="h-4 w-4 text-[#ff3503] shrink-0" />
               Request Access
             </motion.a>
 

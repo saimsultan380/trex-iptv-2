@@ -61,7 +61,7 @@ export default function ReviewSubmitForm() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4 sm:mb-6">
-          Submit Your <span className="text-[#ff6b35]">Review</span>
+          Submit Your <span className="text-[#ff3503]">Review</span>
         </h2>
 
         <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-6 sm:mb-8">
@@ -84,7 +84,7 @@ export default function ReviewSubmitForm() {
                 required
                 autoComplete="email"
                 placeholder="email@example.com"
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
               />
             </div>
 
@@ -100,7 +100,7 @@ export default function ReviewSubmitForm() {
                 name="displayName"
                 type="text"
                 placeholder="e.g. J. or James"
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
               />
             </div>
 
@@ -124,7 +124,7 @@ export default function ReviewSubmitForm() {
                     >
                       <Star
                         className={`h-7 w-7 sm:h-8 sm:w-8 ${
-                          active ? "fill-[#ff6b35] text-[#ff6b35]" : "text-zinc-300"
+                          active ? "fill-[#ff3503] text-[#ff3503]" : "text-zinc-300"
                         }`}
                       />
                     </button>
@@ -149,7 +149,7 @@ export default function ReviewSubmitForm() {
                 type="text"
                 required
                 placeholder="e.g. Fire TV Stick 4K"
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
               />
             </div>
 
@@ -166,7 +166,7 @@ export default function ReviewSubmitForm() {
                 type="text"
                 required
                 placeholder="e.g. TiviMate or IPTV Smarters"
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
               />
             </div>
 
@@ -182,7 +182,7 @@ export default function ReviewSubmitForm() {
                 name="experienceDate"
                 type="date"
                 required
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
               />
             </div>
 
@@ -199,7 +199,7 @@ export default function ReviewSubmitForm() {
                 required
                 rows={5}
                 placeholder="Describe your setup, streaming quality, support experience and overall impression..."
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors resize-y min-h-[120px]"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors resize-y min-h-[120px]"
               />
             </div>
           </div>
@@ -210,7 +210,7 @@ export default function ReviewSubmitForm() {
               checked={displayPermission}
               onChange={(event) => setDisplayPermission(event.target.checked)}
               required
-              className="mt-1 h-4 w-4 rounded border-zinc-300 text-[#ff6b35] focus:ring-[#ff6b35]"
+              className="mt-1 h-4 w-4 rounded border-zinc-300 text-[#ff3503] focus:ring-[#ff3503]"
             />
             <span className="text-[12px] sm:text-[13px] text-zinc-600 leading-relaxed font-medium">
               I give permission to display my first name or initials if this review is verified and
@@ -223,7 +223,7 @@ export default function ReviewSubmitForm() {
             whileTap={{ scale: 0.98 }}
             type="submit"
             disabled={rating === 0}
-            className="inline-flex h-11 sm:h-12 items-center justify-center gap-2 rounded-[4px] bg-[#ff6b35] px-6 text-[11px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
+            className="inline-flex h-11 sm:h-12 items-center justify-center gap-2 rounded-full bg-[#ff3503] btn-brand-animated px-6 text-[11px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <Send className="h-4 w-4" />
             Submit a Verified Review

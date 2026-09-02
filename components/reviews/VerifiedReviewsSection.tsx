@@ -11,7 +11,7 @@ function StarRating({ rating }: { rating: number }) {
         <Star
           key={index}
           className={`h-4 w-4 ${
-            index < rating ? "fill-[#ff6b35] text-[#ff6b35]" : "text-zinc-300"
+            index < rating ? "fill-[#ff3503] text-[#ff3503]" : "text-zinc-300"
           }`}
         />
       ))}
@@ -112,7 +112,7 @@ function EmptyReviewsState() {
             key={field}
             className="flex items-center gap-2.5 rounded-lg bg-white/60 px-3 py-2.5 border border-zinc-100"
           >
-            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-orange-50 text-[11px] font-bold text-[#ff6b35]">
+            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-orange-50 text-[11px] font-bold text-[#ff3503]">
               {index + 1}
             </span>
             <span className="text-[12px] sm:text-[13px] font-medium text-zinc-700">{field}</span>
@@ -137,7 +137,7 @@ export default function VerifiedReviewsSection() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4 sm:mb-6">
-          Verified Customer <span className="text-[#ff6b35]">Reviews</span>
+          Verified Customer <span className="text-[#ff3503]">Reviews</span>
         </h2>
 
         <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-6 sm:mb-8">

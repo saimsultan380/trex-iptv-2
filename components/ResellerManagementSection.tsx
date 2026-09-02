@@ -56,9 +56,9 @@ export default function ResellerManagementSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="text-[#ff6b35] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center gap-1.5"
+            className="text-[#ff3503] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center gap-1.5"
           >
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff6b35]" />
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff3503]" />
             All-in-One Reseller Management
           </motion.span>
 
@@ -70,7 +70,7 @@ export default function ResellerManagementSection() {
             className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4"
           >
             Manage Every Client and Subscription From Your{" "}
-            <span className="text-[#ff6b35]">Trex IPTV</span> Reseller Panel
+            <span className="text-[#ff3503]">Trex IPTV</span> Reseller Panel
           </motion.h2>
 
           <motion.p
@@ -97,7 +97,7 @@ export default function ResellerManagementSection() {
                   className="flex items-start gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-xl bg-zinc-50/70 border border-zinc-100 hover:border-orange-100 hover:bg-orange-50/30 transition-colors duration-300"
                 >
                   <div className="flex h-10 w-10 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-lg bg-orange-50 border border-orange-100">
-                    <Icon className="h-5 w-5 text-[#ff6b35] stroke-[1.5]" />
+                    <Icon className="h-5 w-5 text-[#ff3503] stroke-[1.5]" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-[13px] sm:text-[15px] font-bold text-zinc-900 mb-1 leading-snug">
@@ -122,7 +122,7 @@ export default function ResellerManagementSection() {
           >
             <div className="flex items-start gap-3 flex-1 min-w-0">
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-orange-50 border border-orange-100">
-                <Gauge className="h-5 w-5 text-[#ff6b35]" />
+                <Gauge className="h-5 w-5 text-[#ff3503]" />
               </div>
               <p className="text-[11px] sm:text-[13px] text-zinc-600 leading-snug sm:leading-relaxed font-medium pt-0.5">
                 Manage customers faster from one dashboard. Streamline accounts, subscriptions, and renewals — all in one place.
@@ -134,7 +134,7 @@ export default function ResellerManagementSection() {
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-11 sm:h-12 shrink-0 items-center justify-center gap-2 rounded-[4px] bg-[#ff6b35] px-5 sm:px-6 text-[12px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors whitespace-nowrap w-full sm:w-auto"
+              className="inline-flex h-11 sm:h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-[#ff3503] btn-brand-animated px-5 sm:px-6 text-[12px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors whitespace-nowrap w-full sm:w-auto"
             >
               Get Reseller Access
               <ChevronRight className="h-4 w-4" />

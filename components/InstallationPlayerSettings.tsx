@@ -15,7 +15,7 @@ export default function InstallationPlayerSettings() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4">
-          Recommended Player <span className="text-[#ff6b35]">Settings</span>
+          Recommended Player <span className="text-[#ff3503]">Settings</span>
         </h2>
         <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-6">
           Try these settings:
@@ -30,7 +30,7 @@ export default function InstallationPlayerSettings() {
               transition={{ duration: 0.45, delay: index * 0.05, ease: "easeOut" }}
               className="flex items-center gap-3 px-4 py-3 glass-card-hover"
             >
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-[#ff6b35]">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-[#ff3503]">
                 <Settings className="h-5 w-5" />
               </div>
               <span className="text-[13px] sm:text-[14px] font-medium text-zinc-700 leading-relaxed">

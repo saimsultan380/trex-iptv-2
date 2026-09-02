@@ -53,7 +53,7 @@ export default function SupportContactForm() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4 sm:mb-6">
-          Contact Form <span className="text-[#ff6b35]">Categories</span>
+          Contact Form <span className="text-[#ff3503]">Categories</span>
         </h2>
 
         {submitted ? (
@@ -80,7 +80,7 @@ export default function SupportContactForm() {
               name="category"
               required
               defaultValue=""
-              className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+              className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
             >
               <option value="" disabled>
                 Select a category
@@ -103,7 +103,7 @@ export default function SupportContactForm() {
                 name="name"
                 type="text"
                 required
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
               />
             </div>
 
@@ -117,7 +117,7 @@ export default function SupportContactForm() {
                 type="email"
                 required
                 autoComplete="email"
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
               />
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function SupportContactForm() {
               required
               rows={6}
               placeholder="Include order email, device, player, error details and troubleshooting already completed..."
-              className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors resize-y min-h-[140px]"
+              className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors resize-y min-h-[140px]"
             />
           </div>
 
@@ -140,7 +140,7 @@ export default function SupportContactForm() {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             type="submit"
-            className="inline-flex h-11 sm:h-12 items-center justify-center gap-2 rounded-[4px] bg-[#ff6b35] px-6 text-[11px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors whitespace-nowrap"
+            className="inline-flex h-11 sm:h-12 items-center justify-center gap-2 rounded-[4px] bg-[#ff3503] px-6 text-[11px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff3503] transition-colors whitespace-nowrap"
           >
             <Send className="h-4 w-4" />
             Send Support Request

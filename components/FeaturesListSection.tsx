@@ -38,7 +38,7 @@ export default function FeaturesListSection() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-5xl lg:text-[52px] font-extrabold tracking-tight leading-[1.08] text-zinc-900 mb-3 sm:mb-6">
-          Live Channels, Movies and <span className="text-[#ff6b35]">Series</span>
+          Live Channels, Movies and <span className="text-[#ff3503]">Series</span>
         </h2>
 
         <p className="text-zinc-500 text-[13px] sm:text-[15px] leading-relaxed mb-6 sm:mb-10">
@@ -55,7 +55,7 @@ export default function FeaturesListSection() {
               transition={{ duration: 0.45, delay: i * 0.05, ease: "easeOut" }}
               className="flex items-center gap-3 px-4 py-3 glass-card-hover"
             >
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-[#ff6b35]">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-[#ff3503]">
                 {item.icon}
               </div>
               <span className="text-[12px] sm:text-[14px] font-bold text-zinc-900 leading-snug">

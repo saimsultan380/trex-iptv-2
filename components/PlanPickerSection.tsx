@@ -132,7 +132,7 @@ function CtaBlock({
           className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-zinc-900 px-7 sm:px-8 text-[13px] sm:text-sm font-bold text-white hover:bg-zinc-800 transition-colors whitespace-nowrap shadow-sm"
         >
           {primaryCta.label}
-          <ChevronRight className="h-4 w-4 text-[#ff6b35]" />
+          <ChevronRight className="h-4 w-4 text-[#ff3503]" />
         </motion.a>
         <motion.a
           whileHover={{ scale: 1.02 }}
@@ -148,7 +148,7 @@ function CtaBlock({
         </motion.a>
       </div>
       <p className="text-zinc-400 text-[11px] sm:text-[12px] flex items-center gap-1.5 text-center lg:text-left">
-        <Check className="h-3.5 w-3.5 text-[#ff6b35] shrink-0" />
+        <Check className="h-3.5 w-3.5 text-[#ff3503] shrink-0" />
         All plans include 4K/8K streaming, 24/7 support, and all premium features.
       </p>
     </div>
@@ -187,11 +187,11 @@ export default function PlanPickerSection({
 
   const heading = isHome ? (
     <>
-      Which <span className="text-[#ff6b35]">Trex IPTV</span> Subscription Should You Choose?
+      Which <span className="text-[#ff3503]">Trex IPTV</span> Subscription Should You Choose?
     </>
   ) : (
     <>
-      Which <span className="text-[#ff6b35]">Trex IPTV</span> Plan Should You Choose?
+      Which <span className="text-[#ff3503]">Trex IPTV</span> Plan Should You Choose?
     </>
   );
 
@@ -214,8 +214,8 @@ export default function PlanPickerSection({
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="lg:col-span-5 flex flex-col"
         >
-          <span className="text-[#ff6b35] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ff6b35] shrink-0" />
+          <span className="text-[#ff3503] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ff3503] shrink-0" />
             Choose Your Plan
           </span>
 
@@ -261,7 +261,7 @@ export default function PlanPickerSection({
               className="absolute left-[19px] top-5 bottom-5 w-px hidden sm:block pointer-events-none"
               style={{
                 backgroundImage:
-                  "repeating-linear-gradient(to bottom, rgba(255,107,53,0.45) 0px, rgba(255,107,53,0.45) 5px, transparent 5px, transparent 11px)",
+                  "repeating-linear-gradient(to bottom, rgba(255,53,3,0.45) 0px, rgba(255,53,3,0.45) 5px, transparent 5px, transparent 11px)",
               }}
               aria-hidden
             />
@@ -277,7 +277,7 @@ export default function PlanPickerSection({
               >
                 {/* Step number — desktop timeline only */}
                 <div className="relative z-10 hidden sm:flex flex-shrink-0 pt-5">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#ff6b35] text-white font-extrabold text-[15px] ring-4 ring-white shadow-[0_4px_14px_rgba(255,107,53,0.35)]">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#ff3503] text-white font-extrabold text-[15px] ring-4 ring-white shadow-[0_4px_14px_rgba(255,53,3,0.35)]">
                     {plan.num}
                   </div>
                 </div>
@@ -286,23 +286,23 @@ export default function PlanPickerSection({
                 <div
                   className={`flex-1 flex flex-col sm:flex-row sm:items-stretch p-3.5 sm:p-5 rounded-xl sm:rounded-2xl border transition-all duration-300 ${
                     plan.popular
-                      ? "border-[#ff6b35] bg-gradient-to-br from-orange-50/40 to-white shadow-[0_8px_30px_rgba(255,107,53,0.1)]"
-                      : "border-zinc-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:border-orange-200 hover:shadow-[0_8px_28px_rgba(255,107,53,0.08)]"
+                      ? "border-[#ff3503] bg-gradient-to-br from-orange-50/40 to-white shadow-[0_8px_30px_rgba(255,53,3,0.1)]"
+                      : "border-zinc-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:border-orange-200 hover:shadow-[0_8px_28px_rgba(255,53,3,0.08)]"
                   }`}
                 >
                   {/* Mobile header: icon + title */}
                   <div className="flex items-start gap-2.5 sm:gap-4 min-w-0 sm:flex-1 sm:pb-0 sm:pr-4">
                     <div className="relative shrink-0">
-                      <div className="flex h-9 w-9 sm:h-11 sm:w-11 items-center justify-center rounded-lg sm:rounded-xl bg-orange-50 border border-orange-100 text-[#ff6b35]">
+                      <div className="flex h-9 w-9 sm:h-11 sm:w-11 items-center justify-center rounded-lg sm:rounded-xl bg-orange-50 border border-orange-100 text-[#ff3503]">
                         {plan.icon}
                       </div>
-                      <span className="sm:hidden absolute -top-1.5 -right-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-[#ff6b35] text-white font-extrabold text-[10px] ring-2 ring-white">
+                      <span className="sm:hidden absolute -top-1.5 -right-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-[#ff3503] text-white font-extrabold text-[10px] ring-2 ring-white">
                         {plan.num}
                       </span>
                     </div>
 
                     <div className="flex-1 min-w-0">
-                      <span className="text-[9px] sm:text-[10px] font-bold text-[#ff6b35] tracking-[0.18em] uppercase">
+                      <span className="text-[9px] sm:text-[10px] font-bold text-[#ff3503] tracking-[0.18em] uppercase">
                         Best For
                       </span>
                       <h3 className="text-[14px] sm:text-[17px] font-bold text-zinc-900 mt-0.5 mb-1.5 sm:mb-2 leading-tight">
@@ -330,7 +330,7 @@ export default function PlanPickerSection({
                           key={j}
                           className="inline-flex items-center gap-0.5 sm:gap-1 text-[8px] sm:text-[10px] font-semibold text-zinc-600 bg-zinc-50 border border-zinc-200 px-1.5 sm:px-2 py-0.5 rounded-full whitespace-nowrap"
                         >
-                          <span className="text-[#ff6b35]">{tag.icon}</span>
+                          <span className="text-[#ff3503]">{tag.icon}</span>
                           {tag.label}
                         </span>
                       ))}

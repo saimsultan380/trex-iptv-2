@@ -84,7 +84,7 @@ export default function ResellerFAQSection() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-center mb-8 sm:mb-14"
       >
-        <span className="text-[#ff6b35] text-xs font-bold tracking-widest uppercase mb-3 block">
+        <span className="text-[#ff3503] text-xs font-bold tracking-widest uppercase mb-3 block">
           FAQs
         </span>
         <h2 className="text-[26px] sm:text-4xl lg:text-5xl font-bold tracking-tight text-zinc-900">
@@ -102,7 +102,7 @@ export default function ResellerFAQSection() {
             transition={{ duration: 0.4, delay: index * 0.03, ease: "easeOut" }}
             className={`rounded-xl border transition-all duration-200 overflow-hidden ${
               openIndex === index
-                ? "border-[#ff6b35] shadow-[0_4px_20px_rgba(255,107,53,0.08)]"
+                ? "border-[#ff3503] shadow-[0_4px_20px_rgba(255,53,3,0.08)]"
                 : "border-zinc-200 hover:border-zinc-300"
             }`}
           >
@@ -112,7 +112,7 @@ export default function ResellerFAQSection() {
             >
               <span
                 className={`text-[13px] sm:text-[15px] font-bold leading-snug transition-colors ${
-                  openIndex === index ? "text-[#ff6b35]" : "text-zinc-900"
+                  openIndex === index ? "text-[#ff3503]" : "text-zinc-900"
                 }`}
               >
                 {faq.question}
@@ -123,7 +123,7 @@ export default function ResellerFAQSection() {
                 className="shrink-0"
               >
                 <ChevronDown
-                  className={`h-5 w-5 ${openIndex === index ? "text-[#ff6b35]" : "text-zinc-400"}`}
+                  className={`h-5 w-5 ${openIndex === index ? "text-[#ff3503]" : "text-zinc-400"}`}
                 />
               </motion.div>
             </button>

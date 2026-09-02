@@ -132,7 +132,7 @@ export default function SupportedDevicesSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="lg:col-span-4 flex flex-col"
         >
-          <span className="text-[#ff6b35] text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-2 flex items-center gap-1.5">
+          <span className="text-[#ff3503] text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-2 flex items-center gap-1.5">
             <Tv className="h-3.5 w-3.5" />
             Compatible Devices For Trex IPTV Subscription Plans
           </span>
@@ -157,7 +157,7 @@ export default function SupportedDevicesSection() {
                 transition={{ duration: 0.35, delay: i * 0.045, ease: "easeOut" }}
                 className="flex items-start gap-3"
               >
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-50 border border-orange-100 text-[#ff6b35]">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-50 border border-orange-100 text-[#ff3503]">
                   {device.icon}
                 </div>
                 <div>
@@ -205,7 +205,7 @@ export default function SupportedDevicesSection() {
               className="p-4 sm:p-5 rounded-xl border border-zinc-200 bg-white hover:border-orange-200 hover:shadow-sm transition-all"
             >
               <div className="flex items-center gap-2 mb-3">
-                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-orange-50 text-[#ff6b35]">
+                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-orange-50 text-[#ff3503]">
                   {app.icon}
                 </div>
                 <h4 className="text-[11px] sm:text-[13px] font-bold text-zinc-900">
@@ -233,7 +233,7 @@ export default function SupportedDevicesSection() {
             href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent("Hi, I want to get my 24h free trial for Trex IPTV")}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-11 sm:h-12 items-center justify-center rounded-[4px] bg-[#ff6b35] px-6 sm:px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors whitespace-nowrap"
+            className="inline-flex h-11 sm:h-12 items-center justify-center rounded-full bg-[#ff3503] btn-brand-animated px-6 sm:px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors whitespace-nowrap"
           >
             Start Free Trial →
           </motion.a>

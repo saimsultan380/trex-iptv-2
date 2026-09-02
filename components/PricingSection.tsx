@@ -21,7 +21,7 @@ export default function PricingSection() {
         className="mb-8 sm:mb-14"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-5xl font-bold tracking-tight text-zinc-900 mb-3 sm:mb-4">
-          Trex IPTV <span className="text-[#ff6b35]">Pricing</span>
+          Trex IPTV <span className="text-[#ff3503]">Pricing</span>
         </h2>
         <p className="text-zinc-500 text-[12px] sm:text-[15px] font-medium max-w-xl">
           Choose the access period that suits you.
@@ -39,12 +39,12 @@ export default function PricingSection() {
             whileHover={{ y: -4 }}
             className={`relative flex flex-col rounded-2xl border p-5 sm:p-6 transition-all duration-300 ${
               plan.popular
-                ? "border-[#ff6b35] bg-gradient-to-b from-orange-50/60 to-white/80 shadow-[0_20px_50px_rgba(255,107,53,0.12)]"
+                ? "border-[#ff3503] bg-gradient-to-b from-orange-50/60 to-white/80 shadow-[0_20px_50px_rgba(255,107,53,0.12)]"
                 : "glass-card-hover"
             }`}
           >
             {plan.popular && (
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#ff6b35] text-white text-[10px] sm:text-[11px] font-extrabold px-3 py-1 rounded-full shadow-sm whitespace-nowrap">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#ff3503] text-white text-[10px] sm:text-[11px] font-extrabold px-3 py-1 rounded-full shadow-sm whitespace-nowrap">
                 Best Value
               </div>
             )}
@@ -52,8 +52,8 @@ export default function PricingSection() {
             <div className="flex items-center justify-center gap-2 mb-4 mt-1">
               <div className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border ${
                 plan.popular
-                  ? "bg-orange-100 border-orange-200 text-[#ff6b35]"
-                  : "bg-orange-50 border-orange-100 text-[#ff6b35]"
+                  ? "bg-orange-100 border-orange-200 text-[#ff3503]"
+                  : "bg-orange-50 border-orange-100 text-[#ff3503]"
               }`}>
                 <Calendar className="h-4 w-4" />
               </div>
@@ -70,7 +70,7 @@ export default function PricingSection() {
 
             <div className="flex flex-col items-center justify-center flex-grow mb-4">
               <p className={`text-[34px] sm:text-[40px] font-extrabold leading-none ${
-                plan.popular ? "text-[#ff6b35]" : "text-zinc-900"
+                plan.popular ? "text-[#ff3503]" : "text-zinc-900"
               }`}>
                 {plan.price}
               </p>
@@ -105,7 +105,7 @@ export default function PricingSection() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           href="/subscription-plans/"
-          className="inline-flex h-12 items-center justify-center rounded-[4px] bg-[#ff6b35] px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors"
+          className="inline-flex h-12 items-center justify-center rounded-[4px] bg-[#ff3503] px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff3503] transition-colors"
         >
           View Subscription Options
         </motion.a>

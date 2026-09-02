@@ -74,9 +74,9 @@ export default function ContactFreeTrialSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="text-[#ff6b35] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center gap-1.5"
+            className="text-[#ff3503] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center gap-1.5"
           >
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff6b35]" />
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff3503]" />
             Free 24h Trial
           </motion.span>
 
@@ -87,7 +87,7 @@ export default function ContactFreeTrialSection() {
             transition={{ duration: 0.55, ease: "easeOut", delay: 0.05 }}
             className="text-[26px] sm:text-4xl lg:text-[40px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4"
           >
-            Request Your <span className="text-[#ff6b35]">Trex IPTV</span> Free Trial for 24 Hours Before You Buy
+            Request Your <span className="text-[#ff3503]">Trex IPTV</span> Free Trial for 24 Hours Before You Buy
           </motion.h2>
 
           <motion.p
@@ -111,7 +111,7 @@ export default function ContactFreeTrialSection() {
           </motion.p>
 
           {/* 2x2 feature grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-4 mb-6 sm:mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4 mb-6 sm:mb-8">
             {trialFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -121,10 +121,10 @@ export default function ContactFreeTrialSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.45, delay: index * 0.07, ease: "easeOut" }}
-                  className="flex flex-row sm:flex-col items-start gap-3 sm:gap-0 p-3.5 sm:p-4 rounded-xl border border-zinc-100 bg-white shadow-[0_2px_10px_rgba(0,0,0,0.03)] hover:border-orange-100 hover:shadow-[0_6px_20px_rgba(255,107,53,0.08)] transition-all duration-300"
+                  className="flex flex-row sm:flex-col items-start gap-3 sm:gap-0 p-3.5 sm:p-4 rounded-xl border border-zinc-100 bg-white shadow-[0_2px_10px_rgba(0,0,0,0.03)] hover:border-orange-100 hover:shadow-[0_6px_20px_rgba(255,53,3,0.08)] transition-all duration-300"
                 >
                   <div className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg bg-orange-50 border border-orange-100 sm:mb-3">
-                    <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-[#ff6b35]" />
+                    <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-[#ff3503]" />
                   </div>
                   <div className="min-w-0">
                     <h3 className="text-[12px] sm:text-[14px] font-bold text-zinc-900 mb-1 leading-snug">
@@ -149,7 +149,7 @@ export default function ContactFreeTrialSection() {
             href={trialHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-12 sm:h-14 w-full sm:w-auto items-center justify-between sm:justify-center gap-3 rounded-full bg-[#ff6b35] px-5 sm:px-8 text-[12px] sm:text-[15px] font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors"
+            className="inline-flex h-12 sm:h-14 w-full sm:w-auto items-center justify-between sm:justify-center gap-3 rounded-full bg-[#ff3503] px-5 sm:px-8 text-[12px] sm:text-[15px] font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors"
           >
             <span className="text-left sm:text-center leading-tight">
               Request Your Free Trex IPTV Trial

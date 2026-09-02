@@ -44,17 +44,17 @@ const rows = [
 
 const badges = [
   {
-    icon: <CheckCircle2 className="h-5 w-5 text-[#ff6b35]" />,
+    icon: <CheckCircle2 className="h-5 w-5 text-[#ff3503]" />,
     title: "Direct Provider",
     desc: "No middlemen. Just pure access.",
   },
   {
-    icon: <ShieldCheck className="h-5 w-5 text-[#ff6b35]" />,
+    icon: <ShieldCheck className="h-5 w-5 text-[#ff3503]" />,
     title: "Automatic Failover",
     desc: "Seamless backups, zero interruptions.",
   },
   {
-    icon: <DollarSign className="h-5 w-5 text-[#ff6b35]" />,
+    icon: <DollarSign className="h-5 w-5 text-[#ff3503]" />,
     title: "Zero Markup",
     desc: "Better value. Transparent pricing.",
   },
@@ -73,13 +73,13 @@ export default function ComparisonSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="lg:col-span-4 flex flex-col"
         >
-          <span className="text-[#ff6b35] text-xs font-bold tracking-widest uppercase mb-3">
+          <span className="text-[#ff3503] text-xs font-bold tracking-widest uppercase mb-3">
             WHY TREX IPTV?
           </span>
           <h2 className="text-[28px] sm:text-4xl lg:text-[44px] font-bold tracking-tight leading-tight text-zinc-900 mb-4">
-            Skip the Middleman; Stream Direct With <span className="text-[#ff6b35]">Trex IPTV</span>
+            Skip the Middleman; Stream Direct With <span className="text-[#ff3503]">Trex IPTV</span>
           </h2>
-          <div className="w-10 h-1 bg-[#ff6b35] rounded-full mb-5" />
+          <div className="w-10 h-1 bg-[#ff3503] rounded-full mb-5" />
           <p className="text-zinc-500 text-[13px] sm:text-[15px] leading-relaxed">
             A direct, private, and reliable streaming experience without reseller markup.
           </p>
@@ -108,7 +108,7 @@ export default function ComparisonSection() {
               </div>
 
               {/* Trex IPTV header */}
-              <div className="flex items-center justify-center gap-2 px-3 py-3 sm:px-4 sm:py-4 bg-[#ff6b35] border-l border-orange-400">
+              <div className="flex items-center justify-center gap-2 px-3 py-3 sm:px-4 sm:py-4 bg-[#ff3503] border-l border-orange-400">
                 <CheckCircle2 className="h-4 w-4 text-white shrink-0" />
                 <span className="text-[11px] sm:text-[13px] font-bold text-white whitespace-nowrap">Trex IPTV</span>
               </div>
@@ -122,7 +122,7 @@ export default function ComparisonSection() {
               >
                 {/* Feature label */}
                 <div className="flex items-center gap-2 px-4 py-3 sm:px-5 sm:py-3.5">
-                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-[#ff6b35]">
+                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-[#ff3503]">
                     {row.icon}
                   </div>
                   <span className="text-[11px] sm:text-[13px] font-bold text-zinc-800">{row.feature}</span>
@@ -135,7 +135,7 @@ export default function ComparisonSection() {
 
                 {/* Trex IPTV value */}
                 <div className="flex items-start gap-1.5 px-3 py-3 sm:px-4 sm:py-3.5 border-l border-orange-100 bg-orange-50/40">
-                  <CheckCircle2 className="h-3.5 w-3.5 text-[#ff6b35] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-3.5 w-3.5 text-[#ff3503] shrink-0 mt-0.5" />
                   <p className="text-[10px] sm:text-[12px] text-zinc-700 font-medium leading-snug">{row.trex}</p>
                 </div>
               </div>
@@ -166,7 +166,7 @@ export default function ComparisonSection() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               href="/free-trial-contact/"
-              className="inline-flex h-12 sm:h-13 items-center justify-center rounded-full bg-[#ff6b35] px-8 sm:px-12 text-[13px] sm:text-sm font-bold text-white shadow-md shadow-orange-500/25 hover:bg-[#ff5722] transition-colors"
+              className="inline-flex h-12 sm:h-13 items-center justify-center rounded-full bg-[#ff3503] px-8 sm:px-12 text-[13px] sm:text-sm font-bold text-white shadow-md shadow-orange-500/25 hover:bg-[#e62e03] transition-colors"
             >
               Activate Trex IPTV →
             </motion.a>

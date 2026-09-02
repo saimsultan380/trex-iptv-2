@@ -10,7 +10,7 @@ type HeroCinemaVisualProps = {
 };
 
 export default function HeroCinemaVisual({
-  className = "lg:col-span-6 relative flex justify-center lg:justify-end mt-6 lg:mt-0 w-full min-w-0",
+  className = "lg:col-span-6 relative flex justify-center lg:justify-end mt-3 sm:mt-6 lg:mt-0 w-full min-w-0",
   delay = 0.15,
 }: HeroCinemaVisualProps) {
   return (

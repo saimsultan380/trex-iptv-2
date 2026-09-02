@@ -28,7 +28,7 @@ export default function SubscriptionPlansClient() {
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 className="text-[26px] sm:text-5xl lg:text-[52px] font-bold tracking-tight leading-[1.12] text-zinc-950 mb-4 sm:mb-6"
               >
-                <span className="text-[#ff6b35]">Trex IPTV</span> Subscription Options and Pricing
+                <span className="text-[#ff3503]">Trex IPTV</span> Subscription Options and Pricing
               </motion.h1>
 
               <motion.p
@@ -59,7 +59,7 @@ export default function SubscriptionPlansClient() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   href="#comparison"
-                  className="inline-flex h-11 sm:h-12 items-center justify-center gap-2 rounded-[4px] bg-[#ff6b35] px-4 sm:px-6 text-[11px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors whitespace-nowrap"
+                  className="inline-flex h-11 sm:h-12 items-center justify-center gap-2 rounded-full bg-[#ff3503] btn-brand-animated px-4 sm:px-6 text-[11px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors whitespace-nowrap"
                 >
                   Compare Subscription Prices
                   <ChevronRight className="h-4 w-4" />

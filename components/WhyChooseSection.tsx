@@ -36,7 +36,7 @@ export default function WhyChooseSection() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-6 sm:mb-8">
-          Which Option Should You <span className="text-[#ff6b35]">Choose?</span>
+          Which Option Should You <span className="text-[#ff3503]">Choose?</span>
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">

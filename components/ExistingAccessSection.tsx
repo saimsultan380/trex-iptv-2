@@ -39,17 +39,17 @@ const benefits = [
 
 const badges = [
   {
-    icon: <Infinity className="h-5 w-5 text-[#ff6b35]" />,
+    icon: <Infinity className="h-5 w-5 text-[#ff3503]" />,
     title: "Unlimited Clients",
     desc: "No limits. Grow your customer base freely.",
   },
   {
-    icon: <Zap className="h-5 w-5 text-[#ff6b35]" />,
+    icon: <Zap className="h-5 w-5 text-[#ff3503]" />,
     title: "Fast Activation",
     desc: "Get started in minutes and go live fast.",
   },
   {
-    icon: <TrendingUp className="h-5 w-5 text-[#ff6b35]" />,
+    icon: <TrendingUp className="h-5 w-5 text-[#ff3503]" />,
     title: "High Margin Opportunity",
     desc: "Keep more. Earn more. Scale effortlessly.",
   },
@@ -69,13 +69,13 @@ export default function ExistingAccessSection() {
           className="lg:col-span-5 flex flex-col"
         >
           {/* Badge */}
-          <span className="text-[#ff6b35] text-xs font-bold tracking-widest uppercase mb-3 flex items-center gap-1.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ff6b35] inline-block" />
+          <span className="text-[#ff3503] text-xs font-bold tracking-widest uppercase mb-3 flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ff3503] inline-block" />
             BECOME OUR PARTNER
           </span>
 
           <h2 className="text-[28px] sm:text-4xl lg:text-[44px] font-bold tracking-tight leading-tight text-zinc-900 mb-4">
-            Get Your <span className="text-[#ff6b35]">Trex IPTV</span> Reseller Panel
+            Get Your <span className="text-[#ff3503]">Trex IPTV</span> Reseller Panel
           </h2>
 
           <p className="text-zinc-500 text-[13px] sm:text-[15px] leading-relaxed mb-6 sm:mb-8 max-w-sm">
@@ -93,7 +93,7 @@ export default function ExistingAccessSection() {
                 transition={{ duration: 0.4, delay: i * 0.07, ease: "easeOut" }}
                 className="flex flex-col gap-2"
               >
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-orange-50 text-[#ff6b35] border border-orange-100">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-orange-50 text-[#ff3503] border border-orange-100">
                   {b.icon}
                 </div>
                 <h4 className="text-[12px] sm:text-[13px] font-bold text-zinc-900 leading-snug">{b.title}</h4>
@@ -113,7 +113,7 @@ export default function ExistingAccessSection() {
               Become a Reseller →
             </motion.a>
             <p className="text-zinc-400 text-[11px] flex items-center gap-1.5">
-              <Check className="h-3 w-3 text-[#ff6b35]" /> No setup fees. No long-term contracts.
+              <Check className="h-3 w-3 text-[#ff3503]" /> No setup fees. No long-term contracts.
             </p>
           </div>
         </motion.div>

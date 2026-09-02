@@ -28,7 +28,7 @@ export default function BeforeOrderingSection() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-zinc-900 mb-4 sm:mb-6">
-          Check These Points Before <span className="text-[#ff6b35]">Ordering</span>
+          Check These Points Before <span className="text-[#ff3503]">Ordering</span>
         </h2>
 
         <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-6">
@@ -45,7 +45,7 @@ export default function BeforeOrderingSection() {
               transition={{ duration: 0.4, delay: i * 0.06, ease: "easeOut" }}
               className="flex items-center gap-3 px-4 py-3 glass-card-hover"
             >
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ff6b35]">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ff3503]">
                 {item.icon}
               </div>
               <span className="text-[13px] sm:text-[14px] font-bold text-zinc-900">

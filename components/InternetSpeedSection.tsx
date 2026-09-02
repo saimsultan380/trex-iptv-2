@@ -20,7 +20,7 @@ export default function InternetSpeedSection() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-zinc-900 mb-4 sm:mb-6">
-          Internet Speed <span className="text-[#ff6b35]">Requirements</span>
+          Internet Speed <span className="text-[#ff3503]">Requirements</span>
         </h2>
 
         <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-3">
@@ -40,7 +40,7 @@ export default function InternetSpeedSection() {
               transition={{ duration: 0.45, delay: i * 0.08, ease: "easeOut" }}
               className="glass-card-hover flex flex-col items-center text-center p-6"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-orange-100 text-[#ff6b35] mb-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-orange-100 text-[#ff3503] mb-3">
                 <Gauge className="h-5 w-5" />
               </div>
               <p className="text-[24px] sm:text-[28px] font-extrabold text-zinc-900 leading-none mb-1">
@@ -55,11 +55,11 @@ export default function InternetSpeedSection() {
 
         <div className="space-y-3">
           <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium flex items-start gap-2">
-            <Cable className="h-5 w-5 text-[#ff6b35] shrink-0 mt-0.5" />
+            <Cable className="h-5 w-5 text-[#ff3503] shrink-0 mt-0.5" />
             Ethernet is often more stable than Wi-Fi. When using Wi-Fi, keep your device near the router and avoid large downloads while watching.
           </p>
           <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium flex items-start gap-2">
-            <Wifi className="h-5 w-5 text-[#ff6b35] shrink-0 mt-0.5" />
+            <Wifi className="h-5 w-5 text-[#ff3503] shrink-0 mt-0.5" />
             Internet-provider routing, network traffic, device performance and player settings can affect playback. No provider can honestly guarantee that buffering will never happen.
           </p>
         </div>

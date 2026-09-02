@@ -18,10 +18,10 @@ export default function ScrollReveal({
   children,
   direction = "up",
   delay = 0,
-  duration = 0.5,
-  distance = 20,
+  duration = 0.75,
+  distance = 28,
   className = "",
-  margin = "-20px",
+  margin = "-40px",
   once = true,
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -49,7 +49,7 @@ export default function ScrollReveal({
       transition: {
         duration,
         delay,
-        ease: [0.21, 0.47, 0.32, 0.98],
+        ease: [0.22, 1, 0.36, 1],
       },
     },
   };
@@ -60,7 +60,7 @@ export default function ScrollReveal({
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={variants}
-      className={className}
+      className={`scroll-reveal-section ${className}`.trim()}
     >
       {children}
     </motion.div>

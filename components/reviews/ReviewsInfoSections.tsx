@@ -36,7 +36,7 @@ function SectionBlock({
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4 sm:mb-6">
-          {title} <span className="text-[#ff6b35]">{accent}</span>
+          {title} <span className="text-[#ff3503]">{accent}</span>
         </h2>
         {children}
       </motion.div>
@@ -58,10 +58,10 @@ function ItemList({
       ? "bg-emerald-50 text-emerald-600"
       : variant === "negative"
         ? "bg-red-50 text-red-500"
-        : "bg-orange-50 text-[#ff6b35]";
+        : "bg-orange-50 text-[#ff3503]";
 
   return (
-    <ul className="space-y-2 sm:space-y-3">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 list-none p-0 m-0">
       {items.map((item, index) => (
         <motion.li
           key={item}
@@ -69,7 +69,7 @@ function ItemList({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.35, delay: index * 0.04, ease: "easeOut" }}
-          className="flex items-start gap-3 px-4 py-3 glass-card-hover"
+          className="flex items-start gap-3 px-4 py-3 glass-card-hover h-full"
         >
           <div
             className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg ${iconBg}`}

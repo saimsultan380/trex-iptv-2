@@ -98,7 +98,7 @@ export default function SetupProcessSection({
         className="mb-8 sm:mb-14 w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight text-zinc-900 mb-4">
-          How It <span className="text-[#ff6b35]">Works</span>
+          How It <span className="text-[#ff3503]">Works</span>
         </h2>
         {!isSubscription && (
           <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
@@ -109,7 +109,7 @@ export default function SetupProcessSection({
 
       <div className="relative mb-8 sm:mb-10">
         <div
-          className="hidden xl:block absolute top-[52px] left-[10%] right-[10%] h-px bg-[#ff6b35]/30 z-0"
+          className="hidden xl:block absolute top-[52px] left-[10%] right-[10%] h-px bg-[#ff3503]/30 z-0"
           aria-hidden
         />
 
@@ -125,17 +125,17 @@ export default function SetupProcessSection({
             >
               {index < steps.length - 1 && (
                 <div className="hidden xl:flex absolute -right-2 top-[44px] z-20 items-center justify-center w-4 h-4">
-                  <div className="w-2.5 h-2.5 rounded-full border-2 border-[#ff6b35]/50 bg-white" />
+                  <div className="w-2.5 h-2.5 rounded-full border-2 border-[#ff3503]/50 bg-white" />
                 </div>
               )}
 
-              <div className="flex h-10 w-10 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-lg sm:rounded-xl bg-orange-50 text-[#ff6b35] border border-orange-100 sm:mb-4">
+              <div className="flex h-10 w-10 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-lg sm:rounded-xl bg-orange-50 text-[#ff3503] border border-orange-100 sm:mb-4">
                 {step.icon}
               </div>
 
               <div className="flex-1 min-w-0 sm:flex-none">
                 <div className="flex items-baseline gap-2 mb-1 sm:mb-2">
-                  <span className="text-lg sm:text-[26px] font-extrabold text-[#ff6b35] leading-none">
+                  <span className="text-lg sm:text-[26px] font-extrabold text-[#ff3503] leading-none">
                     {step.id}
                   </span>
                   <h3 className="text-[12px] sm:text-[14px] font-bold text-zinc-900 leading-snug sm:hidden">
@@ -165,7 +165,7 @@ export default function SetupProcessSection({
           className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium"
         >
           The{" "}
-          <a href="/installation-guide/" className="text-[#ff6b35] font-bold hover:underline">
+          <a href="/installation-guide/" className="text-[#ff3503] font-bold hover:underline">
             Installation Guide
           </a>{" "}
           explains how to connect each supported device.

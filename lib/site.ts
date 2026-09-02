@@ -1,4 +1,8 @@
 export const SITE_URL = "https://iptv-trex.us";
+
+/** Electric Orange — primary brand accent */
+export const BRAND_ORANGE = "#ff3503";
+export const BRAND_ORANGE_HOVER = "#e62e03";
 export const SITE_NAME = "Trex IPTV";
 export const SITE_EMAIL = "support@trexiptvusa.com";
 

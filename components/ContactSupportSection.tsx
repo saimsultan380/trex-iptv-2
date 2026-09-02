@@ -76,9 +76,9 @@ export default function ContactSupportSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="text-[#ff6b35] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center gap-1.5"
+            className="text-[#ff3503] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center gap-1.5"
           >
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff6b35]" />
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff3503]" />
             24/7 Customer Support
           </motion.span>
 
@@ -90,7 +90,7 @@ export default function ContactSupportSection() {
             className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4"
           >
             Trex IPTV Setup Assistance and Premium{" "}
-            <span className="text-[#ff6b35]">24/7</span> Customer Support
+            <span className="text-[#ff3503]">24/7</span> Customer Support
           </motion.h2>
 
           <motion.p
@@ -123,7 +123,7 @@ export default function ContactSupportSection() {
           >
             <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
               <div className="flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-lg bg-orange-50 border border-orange-100">
-                <ShieldCheck className="h-4 w-4 text-[#ff6b35]" />
+                <ShieldCheck className="h-4 w-4 text-[#ff3503]" />
               </div>
               <h3 className="text-[14px] sm:text-lg font-bold text-zinc-900">
                 Common Support Areas
@@ -132,7 +132,7 @@ export default function ContactSupportSection() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-3">
               {supportAreas.map((area) => (
                 <div key={area} className="flex items-center gap-2">
-                  <CheckCircle2 className="h-3.5 w-3.5 text-[#ff6b35] shrink-0" />
+                  <CheckCircle2 className="h-3.5 w-3.5 text-[#ff3503] shrink-0" />
                   <span className="text-[11px] sm:text-[13px] text-zinc-600 font-medium leading-snug">
                     {area}
                   </span>
@@ -155,7 +155,7 @@ export default function ContactSupportSection() {
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-11 sm:h-12 items-center justify-center gap-1 sm:gap-2 rounded-[4px] bg-[#ff6b35] px-2 sm:px-6 text-[9px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors text-center leading-tight"
+              className="inline-flex h-11 sm:h-12 items-center justify-center gap-1 sm:gap-2 rounded-full bg-[#ff3503] btn-brand-animated px-2 sm:px-6 text-[9px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors text-center leading-tight"
             >
               <MessageCircle className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
               <span className="sm:hidden">WhatsApp</span>
@@ -168,7 +168,7 @@ export default function ContactSupportSection() {
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-11 sm:h-12 items-center justify-center gap-1 sm:gap-2 rounded-[4px] border border-[#ff6b35] bg-white px-2 sm:px-6 text-[9px] sm:text-sm font-bold text-[#ff6b35] hover:bg-orange-50 transition-colors text-center leading-tight"
+              className="inline-flex h-11 sm:h-12 items-center justify-center gap-1 sm:gap-2 rounded-[4px] border border-[#ff3503] bg-white px-2 sm:px-6 text-[9px] sm:text-sm font-bold text-[#ff3503] hover:bg-orange-50 transition-colors text-center leading-tight"
             >
               <Headphones className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 hidden sm:inline" />
               <span className="sm:hidden">Support</span>
@@ -203,31 +203,31 @@ export default function ContactSupportSection() {
               >
                 <path
                   d="M480 60 H530 V170 H480"
-                  stroke="rgba(255,107,53,0.2)"
+                  stroke="rgba(255,53,3,0.2)"
                   strokeWidth="2"
                   strokeDasharray="5 5"
                 />
                 <path
                   d="M120 170 H70 V290 H120"
-                  stroke="rgba(255,107,53,0.2)"
+                  stroke="rgba(255,53,3,0.2)"
                   strokeWidth="2"
                   strokeDasharray="5 5"
                 />
                 <path
                   d="M480 290 H530 V410 H480"
-                  stroke="rgba(255,107,53,0.2)"
+                  stroke="rgba(255,53,3,0.2)"
                   strokeWidth="2"
                   strokeDasharray="5 5"
                 />
                 <path
                   d="M120 410 H70 V530 H120"
-                  stroke="rgba(255,107,53,0.2)"
+                  stroke="rgba(255,53,3,0.2)"
                   strokeWidth="2"
                   strokeDasharray="5 5"
                 />
                 <path
                   d="M480 530 H530 V600 H480"
-                  stroke="rgba(255,107,53,0.2)"
+                  stroke="rgba(255,53,3,0.2)"
                   strokeWidth="2"
                   strokeDasharray="5 5"
                 />
@@ -244,11 +244,11 @@ export default function ContactSupportSection() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
-                    className={`flex items-start gap-3 sm:gap-4 p-3.5 sm:p-5 bg-white rounded-xl border border-zinc-100 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:border-orange-100 hover:shadow-[0_8px_28px_rgba(255,107,53,0.08)] transition-all w-full sm:w-[88%] ${
+                    className={`flex items-start gap-3 sm:gap-4 p-3.5 sm:p-5 bg-white rounded-xl border border-zinc-100 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:border-orange-100 hover:shadow-[0_8px_28px_rgba(255,53,3,0.08)] transition-all w-full sm:w-[88%] ${
                       index % 2 === 0 ? "sm:mr-auto" : "sm:ml-auto"
                     }`}
                   >
-                    <div className="flex h-11 w-11 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-full bg-white border-2 border-orange-100 text-[#ff6b35] shadow-sm">
+                    <div className="flex h-11 w-11 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-full bg-white border-2 border-orange-100 text-[#ff3503] shadow-sm">
                       <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
                     </div>
                     <div className="min-w-0">
@@ -272,7 +272,7 @@ export default function ContactSupportSection() {
               transition={{ duration: 0.5, delay: 0.45, ease: "easeOut" }}
               className="hidden lg:flex absolute -right-4 xl:right-[-48px] top-[38%] -translate-y-1/2 flex-col items-center gap-3 p-5 rounded-2xl border border-zinc-100 bg-white shadow-[0_12px_40px_rgba(0,0,0,0.08)] z-20 w-[170px] text-center"
             >
-              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-orange-50 border border-orange-100 text-[#ff6b35]">
+              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-orange-50 border border-orange-100 text-[#ff3503]">
                 <Users className="h-5 w-5" />
               </div>
               <p className="text-[12px] text-zinc-600 font-semibold leading-snug">
@@ -288,7 +288,7 @@ export default function ContactSupportSection() {
               transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
               className="lg:hidden flex items-start gap-3 mt-4 p-4 rounded-xl border border-orange-100 bg-orange-50/40"
             >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-50 border border-orange-100 text-[#ff6b35]">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-50 border border-orange-100 text-[#ff3503]">
                 <Users className="h-5 w-5" />
               </div>
               <p className="text-[12px] text-zinc-600 font-medium leading-snug">

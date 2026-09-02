@@ -44,7 +44,7 @@ function SectionBlock({
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4 sm:mb-6">
-          {title} <span className="text-[#ff6b35]">{accent}</span>
+          {title} <span className="text-[#ff3503]">{accent}</span>
         </h2>
         {children}
       </motion.div>
@@ -54,7 +54,7 @@ function SectionBlock({
 
 function ItemList({ items, icon: Icon }: { items: string[]; icon: typeof Clock }) {
   return (
-    <ul className="space-y-2 sm:space-y-3">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 list-none p-0 m-0">
       {items.map((item, index) => (
         <motion.li
           key={item}
@@ -62,9 +62,9 @@ function ItemList({ items, icon: Icon }: { items: string[]; icon: typeof Clock }
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.35, delay: index * 0.04, ease: "easeOut" }}
-          className="flex items-start gap-3 px-4 py-3 glass-card-hover"
+          className="flex items-start gap-3 px-4 py-3 glass-card-hover h-full"
         >
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-[#ff6b35]">
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-[#ff3503]">
             <Icon className="h-5 w-5" />
           </div>
           <span className="text-[13px] sm:text-[14px] font-medium text-zinc-700 leading-relaxed pt-1.5">
@@ -142,7 +142,7 @@ export function TechnicalInfoSection() {
         For technical assistance, provide:
       </p>
       <ItemList items={technicalInfoFields} icon={ClipboardList} />
-      <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mt-4 glass-card px-4 py-3 border-l-4 border-[#ff6b35]">
+      <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mt-4 glass-card px-4 py-3 border-l-4 border-[#ff3503]">
         Never send a complete card number or security code.
       </p>
     </SectionBlock>
@@ -200,7 +200,7 @@ export function InstallationHelpSection() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           href="/installation-guide/"
-          className="inline-flex h-11 sm:h-12 items-center justify-center rounded-[4px] bg-[#ff6b35] px-6 text-[11px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors whitespace-nowrap"
+          className="inline-flex h-11 sm:h-12 items-center justify-center rounded-full bg-[#ff3503] btn-brand-animated px-6 text-[11px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors whitespace-nowrap"
         >
           Open Installation Guide
         </motion.a>

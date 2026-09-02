@@ -3,11 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand-orange: #ff3503;
+  --brand-orange-hover: #e62e03;
+  --brand-orange-soft: rgba(255, 53, 3, 0.08);
+  --brand-orange-glow: rgba(255, 53, 3, 0.28);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand: var(--brand-orange);
+  --color-brand-hover: var(--brand-orange-hover);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -26,6 +32,81 @@ body {
 }
 
 @layer components {
+  .hero-warm-bg {
+    background:
+      radial-gradient(ellipse 80% 60% at 85% 15%, rgba(255, 53, 3, 0.1) 0%, transparent 55%),
+      radial-gradient(ellipse 60% 50% at 10% 85%, rgba(255, 53, 3, 0.06) 0%, transparent 50%),
+      #ffffff;
+  }
+
+  .glass-nav {
+    background: rgba(255, 255, 255, 0.62);
+    backdrop-filter: blur(20px) saturate(1.4);
+    -webkit-backdrop-filter: blur(20px) saturate(1.4);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  }
+
+  .glass-nav-menu-line {
+    width: 1px;
+    height: 1.125rem;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(24, 24, 27, 0.18) 20%,
+      rgba(24, 24, 27, 0.18) 80%,
+      transparent
+    );
+    flex-shrink: 0;
+  }
+
+  .btn-brand {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background-color: var(--brand-orange);
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(255, 53, 3, 0.28);
+    transition: background-color 0.25s ease, transform 0.2s ease;
+  }
+
+  .btn-brand:hover {
+    background-color: var(--brand-orange-hover);
+  }
+
+  .btn-brand-animated {
+    animation: brandCtaPulse 3s ease-in-out infinite;
+  }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    border: 1px solid rgb(212 212 216);
+    background-color: #ffffff;
+    color: rgb(9 9 11);
+    font-weight: 700;
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+  }
+
+  .btn-outline:hover {
+    background-color: rgb(250 250 250);
+    border-color: rgb(161 161 170);
+  }
+
+  .text-brand {
+    color: var(--brand-orange);
+  }
+
+  .bg-brand-soft {
+    background-color: var(--brand-orange-soft);
+  }
+
   .glass-card {
     border-radius: 0.75rem;
     border: 1px solid rgb(255 255 255 / 0.7);
@@ -44,7 +125,65 @@ body {
   }
 
   .glass-card-hover:hover {
-    border-color: rgb(254 215 170 / 0.8);
-    box-shadow: 0 12px 40px rgb(255 107 53 / 0.08);
+    border-color: rgba(255, 53, 3, 0.25);
+    box-shadow: 0 12px 40px rgba(255, 53, 3, 0.08);
+  }
+
+  .scroll-reveal-section {
+    will-change: opacity, transform;
+  }
+
+  .glass-scroll-item {
+    background-color: rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+    transition:
+      background-color 0.7s ease var(--glass-delay, 0s),
+      backdrop-filter 0.7s ease var(--glass-delay, 0s),
+      -webkit-backdrop-filter 0.7s ease var(--glass-delay, 0s),
+      box-shadow 0.7s ease var(--glass-delay, 0s),
+      border-color 0.7s ease var(--glass-delay, 0s);
+  }
+
+  .glass-scroll-item.glass-scroll-visible {
+    background-color: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  }
+}
+
+@keyframes brandCtaPulse {
+  0%,
+  100% {
+    box-shadow:
+      0 4px 14px rgba(255, 53, 3, 0.22),
+      0 0 0 0 rgba(255, 53, 3, 0);
+  }
+
+  50% {
+    box-shadow:
+      0 6px 22px rgba(255, 53, 3, 0.38),
+      0 0 0 6px rgba(255, 53, 3, 0.1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-brand-animated {
+    animation: none;
+  }
+
+  .glass-scroll-item {
+    opacity: 1;
+    transform: none;
+    background-color: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transition: none;
+  }
+
+  .scroll-reveal-section {
+    filter: none !important;
   }
 }

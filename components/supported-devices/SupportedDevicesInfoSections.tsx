@@ -40,7 +40,7 @@ function SectionBlock({
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4 sm:mb-6">
-          {title} <span className="text-[#ff6b35]">{accent}</span>
+          {title} <span className="text-[#ff3503]">{accent}</span>
         </h2>
         {children}
       </motion.div>
@@ -60,7 +60,7 @@ function CardList({ items, icon: Icon }: { items: string[]; icon: typeof Tv }) {
           transition={{ duration: 0.4, delay: index * 0.05, ease: "easeOut" }}
           className="flex items-center gap-3 px-4 py-3 glass-card-hover"
         >
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-[#ff6b35]">
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-[#ff3503]">
             <Icon className="h-5 w-5" />
           </div>
           <span className="text-[13px] sm:text-[14px] font-medium text-zinc-700 leading-relaxed">
@@ -121,7 +121,7 @@ export default function SupportedDevicesInfoSections() {
       <SectionBlock title="Set-Top Boxes and" accent="Receivers">
         <div className="glass-card p-6 sm:p-8 space-y-3">
           <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium flex items-start gap-2">
-            <HardDrive className="h-5 w-5 text-[#ff6b35] shrink-0 mt-0.5" />
+            <HardDrive className="h-5 w-5 text-[#ff3503] shrink-0 mt-0.5" />
             MAG and supported STB devices generally connect through a portal URL and MAC address.
           </p>
           <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
@@ -153,7 +153,7 @@ export default function SupportedDevicesInfoSections() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-6">
           {networkSpeeds.map((tier, i) => (
             <div key={tier.speed} className="glass-card-hover flex flex-col items-center text-center p-6">
-              <Gauge className="h-5 w-5 text-[#ff6b35] mb-3" />
+              <Gauge className="h-5 w-5 text-[#ff3503] mb-3" />
               <p className="text-[24px] font-extrabold text-zinc-900 leading-none mb-1">{tier.speed}</p>
               <p className="text-[12px] font-semibold text-zinc-500">{tier.label}</p>
             </div>

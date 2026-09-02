@@ -60,7 +60,7 @@ export default function FreeTrialForm() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4 sm:mb-6">
-          Free Trial <span className="text-[#ff6b35]">Form</span>
+          Free Trial <span className="text-[#ff3503]">Form</span>
         </h2>
 
         {submitted ? (
@@ -90,7 +90,7 @@ export default function FreeTrialForm() {
                 name="firstName"
                 type="text"
                 required
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
               />
             </div>
 
@@ -104,7 +104,7 @@ export default function FreeTrialForm() {
                 type="email"
                 required
                 autoComplete="email"
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
               />
             </div>
 
@@ -118,7 +118,7 @@ export default function FreeTrialForm() {
                 type="text"
                 required
                 placeholder="e.g. United States"
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
               />
             </div>
 
@@ -132,7 +132,7 @@ export default function FreeTrialForm() {
                 type="text"
                 required
                 placeholder="e.g. Fire TV Stick"
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
               />
             </div>
 
@@ -146,7 +146,7 @@ export default function FreeTrialForm() {
                 type="text"
                 required
                 placeholder="e.g. TiviMate"
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
               />
             </div>
 
@@ -159,7 +159,7 @@ export default function FreeTrialForm() {
                 name="loginMethod"
                 type="text"
                 placeholder="e.g. Xtream Codes or M3U"
-                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/30 focus:border-[#ff6b35] transition-colors"
+                className="w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-[13px] sm:text-[14px] text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#ff3503]/30 focus:border-[#ff3503] transition-colors"
               />
             </div>
           </div>
@@ -170,7 +170,7 @@ export default function FreeTrialForm() {
               checked={newCustomer}
               onChange={(event) => setNewCustomer(event.target.checked)}
               required
-              className="mt-1 h-4 w-4 rounded border-zinc-300 text-[#ff6b35] focus:ring-[#ff6b35]"
+              className="mt-1 h-4 w-4 rounded border-zinc-300 text-[#ff3503] focus:ring-[#ff3503]"
             />
             <span className="text-[12px] sm:text-[13px] text-zinc-600 leading-relaxed font-medium">
               I confirm that I am a new customer requesting an eligible trial.
@@ -183,7 +183,7 @@ export default function FreeTrialForm() {
               checked={termsAccepted}
               onChange={(event) => setTermsAccepted(event.target.checked)}
               required
-              className="mt-1 h-4 w-4 rounded border-zinc-300 text-[#ff6b35] focus:ring-[#ff6b35]"
+              className="mt-1 h-4 w-4 rounded border-zinc-300 text-[#ff3503] focus:ring-[#ff3503]"
             />
             <span className="text-[12px] sm:text-[13px] text-zinc-600 leading-relaxed font-medium">
               I agree to the Terms and Privacy Policy.
@@ -194,7 +194,7 @@ export default function FreeTrialForm() {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             type="submit"
-            className="inline-flex h-11 sm:h-12 items-center justify-center gap-2 rounded-[4px] bg-[#ff6b35] px-6 text-[11px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors whitespace-nowrap"
+            className="inline-flex h-11 sm:h-12 items-center justify-center gap-2 rounded-[4px] bg-[#ff3503] px-6 text-[11px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff3503] transition-colors whitespace-nowrap"
           >
             <Send className="h-4 w-4" />
             Request My Free Trial

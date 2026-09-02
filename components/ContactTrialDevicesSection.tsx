@@ -79,14 +79,14 @@ export default function ContactTrialDevicesSection() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-center lg:text-left mb-8 sm:mb-10 max-w-3xl lg:max-w-none"
       >
-        <span className="text-[#ff6b35] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center justify-center lg:justify-start gap-1.5">
-          <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff6b35]" />
+        <span className="text-[#ff3503] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center justify-center lg:justify-start gap-1.5">
+          <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff3503]" />
           Trex IPTV Works on Every Device You Own
         </span>
 
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-3">
           Compatible Devices For{" "}
-          <span className="text-[#ff6b35]">Trex IPTV</span> Free Trial Access
+          <span className="text-[#ff3503]">Trex IPTV</span> Free Trial Access
         </h2>
 
         <p className="text-zinc-500 text-[13px] sm:text-[15px] leading-relaxed">
@@ -96,7 +96,7 @@ export default function ContactTrialDevicesSection() {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
         {/* Device cards */}
-        <div className="lg:col-span-7 order-2 lg:order-1 grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
+        <div className="lg:col-span-7 order-2 lg:order-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
           {devices.map((device, index) => {
             const Icon = device.icon;
             return (
@@ -106,10 +106,10 @@ export default function ContactTrialDevicesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.04, ease: "easeOut" }}
-                className="flex items-start gap-3 p-3.5 sm:p-4 rounded-xl border border-zinc-200 border-l-[3px] border-l-[#ff6b35]/50 sm:border-l-zinc-200 bg-white hover:border-orange-200 hover:border-l-[#ff6b35] hover:shadow-[0_6px_20px_rgba(255,107,53,0.08)] transition-all duration-300"
+                className="flex items-start gap-3 p-3.5 sm:p-4 rounded-xl border border-zinc-200 border-l-[3px] border-l-[#ff3503]/50 sm:border-l-zinc-200 bg-white hover:border-orange-200 hover:border-l-[#ff3503] hover:shadow-[0_6px_20px_rgba(255,53,3,0.08)] transition-all duration-300"
               >
                 <div className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg bg-orange-50 border border-orange-100">
-                  <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-[#ff6b35]" />
+                  <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-[#ff3503]" />
                 </div>
                 <div className="min-w-0">
                   <h3 className="text-[12px] sm:text-[14px] font-bold text-zinc-900 mb-0.5 leading-snug">
@@ -156,7 +156,7 @@ export default function ContactTrialDevicesSection() {
           href={trialHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex h-11 sm:h-12 w-full sm:w-auto items-center justify-center rounded-[4px] bg-[#ff6b35] px-6 sm:px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff5722] transition-colors"
+          className="inline-flex h-11 sm:h-12 w-full sm:w-auto items-center justify-center rounded-full bg-[#ff3503] btn-brand-animated px-6 sm:px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors"
         >
           Start 24h Free Trial →
         </motion.a>

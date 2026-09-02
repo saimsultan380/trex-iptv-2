@@ -61,7 +61,7 @@ function FeatureCard({
       transition={{ duration: 0.55, delay, ease: "easeOut" }}
       className="flex items-start gap-3 p-4 sm:p-4 rounded-xl border border-zinc-100 bg-white shadow-sm hover:shadow-md hover:border-orange-100 transition-all w-full"
     >
-      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ff6b35]">
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ff3503]">
         {icon}
       </div>
       <div>
@@ -84,11 +84,11 @@ export default function BenefitsSection() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-center mb-8 sm:mb-16"
       >
-        <span className="text-[#ff6b35] text-xs sm:text-sm font-bold tracking-widest uppercase mb-3 block">
+        <span className="text-[#ff3503] text-xs sm:text-sm font-bold tracking-widest uppercase mb-3 block">
           WHY THOUSANDS OF CUSTOMERS TRUST TREX IPTV
         </span>
         <h2 className="text-[26px] sm:text-4xl lg:text-5xl font-bold tracking-tight text-zinc-900 leading-tight mb-4">
-          Why Thousands of Customers<br className="hidden sm:block" /> Trust <span className="text-[#ff6b35]">Trex IPTV</span>
+          Why Thousands of Customers<br className="hidden sm:block" /> Trust <span className="text-[#ff3503]">Trex IPTV</span>
         </h2>
         <p className="text-zinc-500 text-[13px] sm:text-[15px] leading-relaxed max-w-2xl mx-auto">
           We&apos;ve built Trex IPTV around what really matters — reliability you can count on, support that&apos;s always there, content that stays fresh, privacy that&apos;s protected, and the freedom to watch your way on any screen.

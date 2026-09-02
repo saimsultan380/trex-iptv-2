@@ -84,13 +84,13 @@ export default function ResellerPricingSection() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="mb-8 sm:mb-12 max-w-3xl mx-auto text-center"
       >
-        <span className="text-[#ff6b35] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center justify-center gap-1.5">
-          <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff6b35]" />
+        <span className="text-[#ff3503] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 flex items-center justify-center gap-1.5">
+          <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff3503]" />
           Reseller Plans
         </span>
 
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4">
-          Choose Your <span className="text-[#ff6b35]">Trex IPTV</span> Reseller Plan
+          Choose Your <span className="text-[#ff3503]">Trex IPTV</span> Reseller Plan
         </h2>
 
         <p className="text-zinc-500 text-[13px] sm:text-[15px] leading-relaxed">
@@ -109,12 +109,12 @@ export default function ResellerPricingSection() {
             transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
             className={`relative flex flex-col w-full max-w-[340px] md:max-w-none rounded-2xl border bg-white p-5 sm:p-6 transition-all duration-300 ${
               plan.popular
-                ? "border-[#ff6b35] shadow-[0_16px_48px_rgba(255,107,53,0.12)]"
+                ? "border-[#ff3503] shadow-[0_16px_48px_rgba(255,53,3,0.12)]"
                 : "border-zinc-200 shadow-sm hover:border-orange-200 hover:shadow-md"
             }`}
           >
             {plan.popular && (
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#ff6b35] text-white text-[9px] sm:text-[11px] font-extrabold px-3 py-1 rounded-full shadow-sm whitespace-nowrap z-10 tracking-wide">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#ff3503] text-white text-[9px] sm:text-[11px] font-extrabold px-3 py-1 rounded-full shadow-sm whitespace-nowrap z-10 tracking-wide">
                 MOST POPULAR
               </div>
             )}
@@ -131,13 +131,13 @@ export default function ResellerPricingSection() {
 
             {/* Best for */}
             <div className="mb-5 pb-5 border-b border-zinc-100">
-              <p className="text-[10px] sm:text-[11px] font-bold text-[#ff6b35] uppercase tracking-wider mb-2.5">
+              <p className="text-[10px] sm:text-[11px] font-bold text-[#ff3503] uppercase tracking-wider mb-2.5">
                 Best For:
               </p>
               <ul className="space-y-2">
                 {plan.bestFor.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <Check className="h-3.5 w-3.5 text-[#ff6b35] shrink-0 mt-0.5" />
+                    <Check className="h-3.5 w-3.5 text-[#ff3503] shrink-0 mt-0.5" />
                     <span className="text-[11px] sm:text-[12px] text-zinc-600 font-medium leading-snug">
                       {item}
                     </span>
@@ -148,13 +148,13 @@ export default function ResellerPricingSection() {
 
             {/* Includes */}
             <div className="mb-6 flex-grow">
-              <p className="text-[10px] sm:text-[11px] font-bold text-[#ff6b35] uppercase tracking-wider mb-2.5">
+              <p className="text-[10px] sm:text-[11px] font-bold text-[#ff3503] uppercase tracking-wider mb-2.5">
                 Includes:
               </p>
               <ul className="space-y-2">
                 {plan.includes.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <Check className="h-3.5 w-3.5 text-[#ff6b35] shrink-0 mt-0.5" />
+                    <Check className="h-3.5 w-3.5 text-[#ff3503] shrink-0 mt-0.5" />
                     <span className="text-[11px] sm:text-[12px] text-zinc-600 font-medium leading-snug">
                       {item}
                     </span>
@@ -172,7 +172,7 @@ export default function ResellerPricingSection() {
               rel="noopener noreferrer"
               className={`inline-flex h-11 sm:h-12 w-full items-center justify-center gap-2 rounded-[4px] text-[12px] sm:text-sm font-bold transition-colors ${
                 plan.popular
-                  ? "bg-[#ff6b35] text-white shadow-sm hover:bg-[#ff5722]"
+                  ? "bg-[#ff3503] text-white shadow-sm hover:bg-[#e62e03]"
                   : "border border-zinc-300 bg-white text-zinc-950 hover:bg-zinc-50"
               }`}
             >

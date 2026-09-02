@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import WhatsAppButton from "@/components/WhatsAppButton";
+import GlassScrollAnimations from "@/components/GlassScrollAnimations";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_TITLE,
@@ -93,7 +94,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport = {
-  themeColor: "#ff6b35",
+  themeColor: "#ff3503",
   width: "device-width",
   initialScale: 1,
 };
@@ -193,6 +194,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         {children}
+        <GlassScrollAnimations />
         <WhatsAppButton />
       </body>
     </html>
