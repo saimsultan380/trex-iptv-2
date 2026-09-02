@@ -96,7 +96,7 @@ export default function Footer() {
 
               <a
                 href="/free-trial-contact/"
-                className="inline-flex h-11 items-center justify-center rounded-full bg-[#ff3503] btn-brand-animated px-6 text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors w-fit"
+                className="inline-flex h-11 items-center justify-center rounded-full bg-[#ff3503] px-6 text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors w-fit"
               >
                 Free Trial &amp; Support
               </a>
