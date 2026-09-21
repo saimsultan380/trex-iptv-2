@@ -11,6 +11,7 @@ const footerLinks = [
   { label: "Subscription Plans", href: "/subscription-plans/" },
   { label: "Supported Devices", href: "/supported-devices/" },
   { label: "Installation Guide", href: "/installation-guide/" },
+  { label: "Blog", href: "/blog/" },
   { label: "Reviews", href: "/reviews/" },
   { label: "Free Trial & Support", href: "/free-trial-contact/" },
   { label: "Reseller Panel", href: "/reseller-panel/" },

@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/installation-guide/", label: "Installation Guide" },
   { href: "/subscription-plans/", label: "Subscription Plans" },
   { href: "/reseller-panel/", label: "Reseller Panel" },
+  { href: "/blog/", label: "Blog" },
   { href: "/free-trial-contact/", label: "Contact Us" },
 ];
 
@@ -32,12 +33,12 @@ export default function Header() {
             </a>
           </div>
 
-          <nav className="hidden md:flex items-center gap-0 text-[15px] font-semibold text-zinc-700">
+          <nav className="hidden md:flex items-center gap-0 text-[14px] lg:text-[15px] font-semibold text-zinc-700">
             {navLinks.map((link, index) => (
               <React.Fragment key={link.href}>
                 <a
                   href={link.href}
-                  className="px-4 py-2 rounded-full hover:text-[#ff3503] hover:bg-[#ff3503]/5 transition-colors"
+                  className="px-3 lg:px-4 py-2 rounded-full hover:text-[#ff3503] hover:bg-[#ff3503]/5 transition-colors"
                 >
                   {link.label}
                 </a>
