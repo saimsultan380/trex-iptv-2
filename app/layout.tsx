@@ -123,7 +123,7 @@ export default function RootLayout({
             `,
           }}
         />
-        <meta name="google-site-verification" content="z5Tc0PCA9LSFCsjXvhadTW_OwZM_qeVTspR0mLUOuSs" />
+        <meta name="google-site-verification" content="1rl1--DlxLPlZb3oZfQCFRacqW_2Gdq2Wkct-nUXdW4" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
