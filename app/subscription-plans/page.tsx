@@ -9,7 +9,7 @@ import {
 } from "@/lib/subscriptionContent";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Trex IPTV Subscription – Pricing from $12.99",
+  title: "Trex IPTV Pricing Plans & Subscription: Starting from $12.99",
   description:
     "Compare Trex IPTV subscription options for 1, 3, 6 or 12 months, with transparent pricing, features and connection limits.",
   path: "/subscription-plans/",

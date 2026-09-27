@@ -5,7 +5,7 @@ import { absoluteUrl, pageMetadata } from "@/lib/seo";
 import { SITE_EMAIL, SITE_URL, WHATSAPP_NUMBER } from "@/lib/site";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Trex IPTV Free Trial and Customer Support",
+  title: "Contact to get Trex IPTV Support, Free Trial & Set Up Guide",
   description:
     "Request an eligible 24-hour Trex IPTV free trial or contact support for activation, installation, billing and account help.",
   path: "/free-trial-contact/",

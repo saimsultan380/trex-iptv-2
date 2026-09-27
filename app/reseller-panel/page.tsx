@@ -6,7 +6,7 @@ import { SITE_EMAIL, SITE_URL } from "@/lib/site";
 import { resellerFaqs } from "@/lib/resellerPanelContent";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Trex IPTV Reseller Panel for U.S. Partners",
+  title: "Become Trex IPTV Reseller: Join Our Trex IPTV Reseller Panel",
   description:
     "Learn how the Trex IPTV reseller panel works, who can apply and how to request reseller pricing for customers in the United States.",
   path: "/reseller-panel/",
