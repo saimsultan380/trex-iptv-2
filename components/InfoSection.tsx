@@ -1,21 +1,29 @@
 "use client";
 
-import { KeyRound, Link2, Monitor } from "lucide-react";
+import { KeyRound, Link2, Monitor, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const loginTypes = [
   {
     icon: <KeyRound className="h-5 w-5" />,
-    title: "Xtream Codes",
+    title: "Xtream Codes login",
   },
   {
     icon: <Link2 className="h-5 w-5" />,
-    title: "An M3U playlist",
+    title: "M3U playlists",
   },
   {
     icon: <Monitor className="h-5 w-5" />,
-    title: "A portal URL connected to a MAC address",
+    title: "Portal-based connections",
   },
+];
+
+const howItWorks = [
+  "Choose an available subscription or request an eligible trial.",
+  "Receive the account information required for access.",
+  "Install or open a compatible IPTV player.",
+  "Enter the supplied login details or playlist information.",
+  "Browse the available catalog and select content to watch.",
 ];
 
 export default function InfoSection() {
@@ -35,20 +43,50 @@ export default function InfoSection() {
 
         <div className="space-y-3 mb-6 sm:mb-8">
           <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
-            Trex IPTV is an internet-based television service.
+            Trex IPTV is an internet-based television service that provides account access to
+            available live television and on-demand content through a compatible IPTV player.
           </p>
           <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
-            Instead of connecting a cable box or satellite dish, you watch through an IPTV player on an internet-connected device.
-          </p>
-          <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
-            Your login may be supplied as:
+            Unlike a traditional cable connection, IPTV uses an internet connection to deliver
+            streams to supported devices. You can use a compatible Smart TV, streaming device, phone,
+            tablet, or computer, depending on the player and service requirements.
           </p>
         </div>
+
+        <h3 className="text-[20px] sm:text-2xl lg:text-3xl font-bold tracking-tight text-zinc-900 mb-3 sm:mb-4">
+          How Does IPTV Trex <span className="text-[#ff3503]">Work?</span>
+        </h3>
+        <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-4">
+          The process is straightforward:
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
+          {howItWorks.map((item, i) => (
+            <motion.div
+              key={item}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.05, ease: "easeOut" }}
+              className="flex items-start gap-3 px-4 py-3 glass-card-hover"
+            >
+              <CheckCircle2 className="h-5 w-5 text-[#ff3503] shrink-0 mt-0.5" />
+              <span className="text-[13px] sm:text-[14px] font-bold text-zinc-900 leading-snug">
+                {item}
+              </span>
+            </motion.div>
+          ))}
+        </div>
+
+        <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-4">
+          Some IPTV players support Xtream Codes login, M3U playlists, or portal-based connections.
+          The appropriate method depends on your account details and device.
+        </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8">
           {loginTypes.map((item, i) => (
             <motion.div
-              key={i}
+              key={item.title}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -65,9 +103,14 @@ export default function InfoSection() {
           ))}
         </div>
 
-        <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
-          Trex IPTV provides the service login. The IPTV player is the app used to display the live channels, movies and series on your screen.
-        </p>
+        <motion.a
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          href="/subscription-plans/"
+          className="inline-flex h-12 items-center justify-center rounded-[4px] bg-[#ff3503] px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors"
+        >
+          Explore Trex IPTV Subscription Options
+        </motion.a>
       </motion.div>
     </section>
   );

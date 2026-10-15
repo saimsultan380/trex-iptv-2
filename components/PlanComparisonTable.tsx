@@ -18,8 +18,13 @@ export default function PlanComparisonTable() {
         className="w-full mb-8 sm:mb-10"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4">
-          Compare Subscription <span className="text-[#ff6b35]">Prices</span>
+          Plans, Total Price &amp;{" "}
+          <span className="text-[#ff3503]">Monthly Average</span>
         </h2>
+        <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium max-w-2xl">
+          Compare Trex IPTV subscription totals and average monthly cost to choose the option that
+          fits your household.
+        </p>
       </motion.div>
 
       <motion.div

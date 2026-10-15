@@ -14,6 +14,19 @@ export interface BlogPost {
 /** Blog card images — keep in sync with each article's `*Meta.image` in lib/blog/. */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "how-to-become-trex-iptv-reseller",
+    href: "/how-to-become-trex-iptv-reseller/",
+    title: "Become a Trex IPTV Reseller & Get a Trex IPTV Reseller Panel",
+    description:
+      "Learn how to become a Trex IPTV reseller, apply for a Trex IPTV reseller panel, understand credits and pricing, and manage customer accounts responsibly.",
+    image: "/trex_iptv_reseller_panel_graphic_1200x675_final.png",
+    category: "Reseller",
+    readTime: "12 min read",
+    date: "October 15, 2026",
+    author: "Trex IPTV Team",
+    featured: true,
+  },
+  {
     slug: "trex-iptv-login-not-working",
     href: "/trex-iptv-login-not-working/",
     title: "Trex IPTV Login Not Working? Fix Login Errors Fast in Minutes",
@@ -24,7 +37,6 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "11 min read",
     date: "October 9, 2026",
     author: "Trex IPTV Team",
-    featured: true,
   },
   {
     slug: "trex-iptv-channels-not-loading",

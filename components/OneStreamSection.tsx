@@ -14,24 +14,27 @@ export default function OneStreamSection() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-zinc-900 mb-4 sm:mb-6">
-          One Active <span className="text-[#ff6b35]">Stream</span>
+          One Active <span className="text-[#ff3503]">Stream</span>
         </h2>
 
         <div className="glass-card p-6 sm:p-8 space-y-4">
           <div className="flex items-start gap-3">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ff6b35]">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ff3503]">
               <Monitor className="h-5 w-5" />
             </div>
             <div className="space-y-3">
               <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
-                Standard access includes one active stream at a time.
+                Standard subscriptions currently include one active stream at a time. You can use
+                supported devices around your home, subject to the service&apos;s connection rules.
               </p>
               <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
-                You can save your login on more than one personal device, but only one device can normally play content at once.
+                You may be able to save your login on multiple personal devices, but that does not
+                mean you can watch simultaneously on all of them.
               </p>
               <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium flex items-start gap-2">
-                <AlertCircle className="h-5 w-5 text-[#ff6b35] shrink-0 mt-0.5" />
-                Starting a second stream may stop the first one or display a connection error. Contact support if you require more than one simultaneous connection.
+                <AlertCircle className="h-5 w-5 text-[#ff3503] shrink-0 mt-0.5" />
+                Simultaneous viewing requires confirmation of additional connection options. Contact
+                support if you need more than one active stream.
               </p>
             </div>
           </div>

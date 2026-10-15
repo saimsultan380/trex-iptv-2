@@ -84,6 +84,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${SITE_URL}/how-to-become-trex-iptv-reseller/`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${SITE_URL}/about-us/`,
       lastModified: new Date(),
       changeFrequency: "yearly",

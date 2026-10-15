@@ -4,24 +4,24 @@ import { motion } from "framer-motion";
 
 const options = [
   {
-    title: "1-month subscription",
+    title: "1-month plan",
     description:
-      "The 1-month subscription is suitable for customers who want the shortest commitment.",
+      "The one-month plan is a practical starting point if you want to evaluate compatibility before committing to a longer subscription.",
   },
   {
-    title: "3-month subscription",
+    title: "3-month and 6-month plans",
     description:
-      "The 3-month subscription offers a lower average monthly price without requiring a long access period.",
+      "The three-month and six-month options provide a middle ground between short-term access and lower average monthly cost.",
   },
   {
-    title: "6-month subscription",
+    title: "12-month plan",
     description:
-      "The 6-month subscription is better for viewers who have already confirmed their device, player and internet connection.",
+      "The twelve-month plan offers the lowest average monthly cost among these four options.",
   },
   {
-    title: "12-month subscription",
+    title: "Before you order",
     description:
-      "The 12-month subscription provides the lowest average monthly cost. New customers should test compatibility before selecting the longest option.",
+      "Review the current checkout details for payment terms, expiration, renewal conditions, and any applicable refund policy before ordering.",
   },
 ];
 
@@ -35,9 +35,17 @@ export default function WhyChooseSection() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="w-full"
       >
-        <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-6 sm:mb-8">
-          Which Option Should You <span className="text-[#ff3503]">Choose?</span>
+        <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-[1.15] text-zinc-900 mb-4 sm:mb-6">
+          Which IPTV Trex Plan Offers the Best Value for{" "}
+          <span className="text-[#ff3503]">USA Users?</span>
         </h2>
+
+        <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-6">
+          The one-month plan is a practical starting point if you want to evaluate compatibility
+          before committing to a longer subscription. The three-month and six-month options provide
+          a middle ground, while the twelve-month plan offers the lowest average monthly cost among
+          these four options.
+        </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
           {options.map((option, index) => (
@@ -59,9 +67,17 @@ export default function WhyChooseSection() {
           ))}
         </div>
 
-        <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
-          If you are unsure, request an eligible trial or start with one month.
+        <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-6">
+          Review the current checkout details for payment terms, expiration, renewal conditions, and
+          any applicable refund policy before ordering.
         </p>
+
+        <a
+          href="/subscription-plans/"
+          className="inline-flex h-12 items-center justify-center rounded-[4px] bg-[#ff3503] px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors"
+        >
+          Compare All Subscription Plans
+        </a>
       </motion.div>
     </section>
   );

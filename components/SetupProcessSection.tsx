@@ -5,35 +5,38 @@ import {
   KeyRound,
   MonitorCheck,
   ShoppingCart,
+  Headphones,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const homeSteps = [
   {
     id: "01",
-    icon: <MonitorCheck className="h-5 w-5" />,
-    title: "Confirm device support",
+    icon: <KeyRound className="h-5 w-5" />,
+    title: "Quick Account Activation",
     description:
-      "Confirm that your device supports an IPTV player.",
+      "Receive your login details after your subscription or eligible trial is approved.",
   },
   {
     id: "02",
-    icon: <ShoppingCart className="h-5 w-5" />,
-    title: "Choose your access period",
+    icon: <MonitorCheck className="h-5 w-5" />,
+    title: "Easy Device Setup",
     description:
-      "Choose your access period or request an eligible trial.",
+      "Enter your account credentials into a supported IPTV player and follow the setup instructions.",
   },
   {
     id: "03",
-    icon: <KeyRound className="h-5 w-5" />,
-    title: "Receive your account information",
-    description: "Receive your account information.",
+    icon: <ShoppingCart className="h-5 w-5" />,
+    title: "Choose the Right Plan",
+    description:
+      "Check subscription duration, stream limits, device compatibility, trial terms, and any player-app fees before ordering.",
   },
   {
     id: "04",
-    icon: <ClipboardList className="h-5 w-5" />,
-    title: "Add the login to your player",
-    description: "Add the login to your chosen player.",
+    icon: <Headphones className="h-5 w-5" />,
+    title: "Help With Setup Issues",
+    description:
+      "Share your device model, player name, and error message with support for troubleshooting assistance.",
   },
 ];
 
@@ -98,11 +101,21 @@ export default function SetupProcessSection({
         className="mb-8 sm:mb-14 w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight text-zinc-900 mb-4">
-          How It <span className="text-[#ff3503]">Works</span>
+          {isSubscription ? (
+            <>
+              How It <span className="text-[#ff3503]">Works</span>
+            </>
+          ) : (
+            <>
+              Get Started With Trex IPTV in Just a Few{" "}
+              <span className="text-[#ff3503]">Steps</span>
+            </>
+          )}
         </h2>
         {!isSubscription && (
           <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
-            Getting started takes four steps:
+            Access available live channels, movies, and series by choosing a plan and connecting
+            your account to a compatible IPTV player.
           </p>
         )}
       </motion.div>
@@ -157,19 +170,26 @@ export default function SetupProcessSection({
       </div>
 
       {!isSubscription && (
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium"
+          className="flex flex-row flex-wrap items-center gap-2 sm:gap-3"
         >
-          The{" "}
-          <a href="/installation-guide/" className="text-[#ff3503] font-bold hover:underline">
-            Installation Guide
-          </a>{" "}
-          explains how to connect each supported device.
-        </motion.p>
+          <a
+            href="/subscription-plans/"
+            className="inline-flex h-11 sm:h-12 items-center justify-center rounded-[4px] bg-[#ff3503] px-6 sm:px-8 text-[12px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors"
+          >
+            Explore Trex IPTV Plans
+          </a>
+          <a
+            href="/free-trial-contact/"
+            className="inline-flex h-11 sm:h-12 items-center justify-center rounded-[4px] border border-zinc-300 bg-white px-6 sm:px-8 text-[12px] sm:text-sm font-bold text-zinc-900 hover:bg-zinc-50 transition-colors"
+          >
+            Get Setup Support
+          </a>
+        </motion.div>
       )}
     </section>
   );

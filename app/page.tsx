@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Header from "@/components/Header";
-import InfoSection from "@/components/InfoSection";
-import PricingSection from "@/components/PricingSection";
-import SetupProcessSection from "@/components/SetupProcessSection";
 import FeaturesListSection from "@/components/FeaturesListSection";
+import PricingSection from "@/components/PricingSection";
+import WhyChooseSection from "@/components/WhyChooseSection";
+import PlanComparisonTable from "@/components/PlanComparisonTable";
+import InfoSection from "@/components/InfoSection";
+import SetupProcessSection from "@/components/SetupProcessSection";
+import BeforeOrderingSection from "@/components/BeforeOrderingSection";
 import DevicesSection from "@/components/DevicesSection";
+import ComparisonSection from "@/components/ComparisonSection";
+import HomeResellerSection from "@/components/HomeResellerSection";
 import InternetSpeedSection from "@/components/InternetSpeedSection";
 import OneStreamSection from "@/components/OneStreamSection";
 import TrialSection from "@/components/TrialSection";
-import BeforeOrderingSection from "@/components/BeforeOrderingSection";
 import SupportSection from "@/components/SupportSection";
 import FAQSection from "@/components/FAQSection";
 import FinalCTASection from "@/components/FinalCTASection";
@@ -47,19 +51,34 @@ export default function Home() {
       <Header />
       <Hero />
       <ScrollReveal>
-        <InfoSection />
+        <FeaturesListSection />
       </ScrollReveal>
       <ScrollReveal>
         <PricingSection />
       </ScrollReveal>
       <ScrollReveal>
-        <FeaturesListSection />
+        <WhyChooseSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <PlanComparisonTable />
+      </ScrollReveal>
+      <ScrollReveal>
+        <InfoSection />
       </ScrollReveal>
       <ScrollReveal>
         <SetupProcessSection />
       </ScrollReveal>
       <ScrollReveal>
+        <BeforeOrderingSection />
+      </ScrollReveal>
+      <ScrollReveal>
         <DevicesSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ComparisonSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <HomeResellerSection />
       </ScrollReveal>
       <ScrollReveal>
         <InternetSpeedSection />
@@ -69,9 +88,6 @@ export default function Home() {
       </ScrollReveal>
       <ScrollReveal>
         <TrialSection />
-      </ScrollReveal>
-      <ScrollReveal>
-        <BeforeOrderingSection />
       </ScrollReveal>
       <ScrollReveal>
         <SupportSection />

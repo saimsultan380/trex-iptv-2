@@ -19,7 +19,8 @@ export default function FAQSection() {
         className="text-center mb-8 sm:mb-14"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-5xl font-bold tracking-tight text-zinc-900">
-          Frequently Asked <span className="text-[#ff6b35]">Questions</span>
+          Frequently Asked Questions About{" "}
+          <span className="text-[#ff3503]">Trex IPTV</span>
         </h2>
       </motion.div>
 

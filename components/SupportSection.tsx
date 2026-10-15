@@ -4,7 +4,7 @@ import { Headphones, ShieldAlert } from "lucide-react";
 import { motion } from "framer-motion";
 
 const supportDetails = [
-  "Device brand and model",
+  "Device model",
   "Player name",
   "Exact error message",
   "Whether one channel or every section is affected",
@@ -22,11 +22,12 @@ export default function SupportSection() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-zinc-900 mb-4 sm:mb-6">
-          Installation and Account <span className="text-[#ff6b35]">Support</span>
+          Practical Installation <span className="text-[#ff3503]">Support</span>
         </h2>
 
         <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-6">
-          Support can assist with activation, login errors and basic installation.
+          If you experience an activation or playback problem, provide the device model, player
+          name, and error details to help identify the cause.
         </p>
         <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-4">
           For faster help, include:
@@ -42,7 +43,7 @@ export default function SupportSection() {
               transition={{ duration: 0.4, delay: i * 0.06, ease: "easeOut" }}
               className="flex items-center gap-3 px-4 py-3 glass-card-hover"
             >
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ff6b35]">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ff3503]">
                 <Headphones className="h-4 w-4" />
               </div>
               <span className="text-[13px] sm:text-[14px] font-bold text-zinc-900">
@@ -52,12 +53,19 @@ export default function SupportSection() {
           ))}
         </div>
 
-        <div className="glass-card flex items-start gap-3 p-5 sm:p-6">
-          <ShieldAlert className="h-5 w-5 text-[#ff6b35] shrink-0 mt-0.5" />
+        <div className="glass-card flex items-start gap-3 p-5 sm:p-6 mb-6">
+          <ShieldAlert className="h-5 w-5 text-[#ff3503] shrink-0 mt-0.5" />
           <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
             Never publish your username, password or playlist link.
           </p>
         </div>
+
+        <a
+          href="/free-trial-contact/"
+          className="inline-flex h-12 items-center justify-center rounded-[4px] bg-[#ff3503] px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors"
+        >
+          Free Setup Assistance
+        </a>
       </motion.div>
     </section>
   );

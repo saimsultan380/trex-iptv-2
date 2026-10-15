@@ -2,29 +2,34 @@
 
 import {
   Tv,
-  Film,
-  Newspaper,
-  Baby,
-  Leaf,
-  Globe,
-  Trophy,
-  CalendarDays,
-  History,
   MonitorPlay,
+  LifeBuoy,
+  Clock,
+  BadgeDollarSign,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const contentItems = [
-  { icon: <Tv className="h-5 w-5" />, title: "35,000+ live channels" },
-  { icon: <Film className="h-5 w-5" />, title: "160,000+ movies and series" },
-  { icon: <Newspaper className="h-5 w-5" />, title: "News and entertainment" },
-  { icon: <Baby className="h-5 w-5" />, title: "Children's programming" },
-  { icon: <Leaf className="h-5 w-5" />, title: "Lifestyle and documentary channels" },
-  { icon: <Globe className="h-5 w-5" />, title: "International television" },
-  { icon: <Trophy className="h-5 w-5" />, title: "Selected sports content" },
-  { icon: <CalendarDays className="h-5 w-5" />, title: "EPG information on supported channels" },
-  { icon: <History className="h-5 w-5" />, title: "Selected Catch-Up content" },
-  { icon: <MonitorPlay className="h-5 w-5" />, title: "SD, HD, Full HD and selected 4K streams" },
+  {
+    icon: <Tv className="h-5 w-5" />,
+    title: "Live television and on-demand entertainment",
+  },
+  {
+    icon: <MonitorPlay className="h-5 w-5" />,
+    title: "HD, Full HD, and selected 4K streams on IPTV Trex",
+  },
+  {
+    icon: <LifeBuoy className="h-5 w-5" />,
+    title: "Free of Cost compatible-device guidance",
+  },
+  {
+    icon: <Clock className="h-5 w-5" />,
+    title: "A 24-hour trial for eligible new customers",
+  },
+  {
+    icon: <BadgeDollarSign className="h-5 w-5" />,
+    title: "Simple subscription options with US-dollar pricing",
+  },
 ];
 
 export default function FeaturesListSection() {
@@ -38,17 +43,14 @@ export default function FeaturesListSection() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-5xl lg:text-[52px] font-extrabold tracking-tight leading-[1.08] text-zinc-900 mb-3 sm:mb-6">
-          Live Channels, Movies and <span className="text-[#ff3503]">Series</span>
+          Trex IPTV for Live TV, Movies and Series in{" "}
+          <span className="text-[#ff3503]">HD &amp; 4K</span>
         </h2>
-
-        <p className="text-zinc-500 text-[13px] sm:text-[15px] leading-relaxed mb-6 sm:mb-10">
-          Your access may include:
-        </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
           {contentItems.map((item, i) => (
             <motion.div
-              key={i}
+              key={item.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -65,9 +67,24 @@ export default function FeaturesListSection() {
           ))}
         </div>
 
-        <p className="text-zinc-500 text-[13px] sm:text-[15px] leading-relaxed">
-          Content availability can change. A particular channel, program, sporting event, movie or series is not permanently guaranteed.
-        </p>
+        <div className="flex flex-row flex-wrap items-center gap-2 sm:gap-3">
+          <motion.a
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            href="/subscription-plans/"
+            className="inline-flex h-11 sm:h-12 items-center justify-center rounded-[4px] bg-[#ff3503] px-6 sm:px-8 text-[12px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors"
+          >
+            Buy Trex IPTV
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            href="/free-trial-contact/"
+            className="inline-flex h-11 sm:h-12 items-center justify-center rounded-[4px] border border-zinc-300 bg-white px-6 sm:px-8 text-[12px] sm:text-sm font-bold text-zinc-900 hover:bg-zinc-50 transition-colors"
+          >
+            Get 24/7 Support
+          </motion.a>
+        </div>
       </motion.div>
     </section>
   );

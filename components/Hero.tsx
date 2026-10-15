@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import HeroCinemaVisual from "@/components/HeroCinemaVisual";
 
 const trustPoints = [
-  "24-Hour Trial Available",
-  "Guided Installation",
-  "One Simple Login",
-  "Customer Support",
+  "Live TV, Movies & Series",
+  "HD / Full HD / Selected 4K",
+  "24-Hour Trial",
+  "24/7 Support",
 ];
 
 export default function Hero() {
@@ -20,18 +20,21 @@ export default function Hero() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="text-[26px] sm:text-5xl lg:text-[56px] font-bold tracking-tight leading-[1.08] text-zinc-950"
+              className="text-[26px] sm:text-4xl lg:text-[48px] font-bold tracking-tight leading-[1.12] text-zinc-950"
             >
-              <span className="text-[#ff3503]">Trex IPTV</span> for Live TV, Movies and Series
+              <span className="text-[#ff3503]">Trex IPTV</span> USA | Get Trex IPTV
+              Subscription &amp; Reseller Panel
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
-              className="mt-2 sm:mt-6 text-zinc-600 text-[13px] sm:text-[15px] leading-snug sm:leading-relaxed font-medium max-w-xl"
+              className="mt-2 sm:mt-5 text-zinc-600 text-[13px] sm:text-[15px] leading-snug sm:leading-relaxed font-medium max-w-xl"
             >
-              Watch live television and on-demand entertainment through your internet connection.
+              Enjoy a simpler way to watch television with Trex IPTV in the USA. Explore live TV,
+              movies, series, news, entertainment, and selected sports content through a compatible
+              device and an internet connection.
             </motion.p>
 
             <motion.p
@@ -40,7 +43,9 @@ export default function Hero() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
               className="mt-2 sm:mt-3 text-zinc-600 text-[13px] sm:text-[15px] leading-snug sm:leading-relaxed font-medium max-w-xl"
             >
-              Trex IPTV gives viewers across the United States access to live channels, movies and series on compatible televisions, streaming devices, phones and computers.
+              Whether you watch on a Smart TV, Amazon Fire TV Stick, Android device, iPhone, or
+              computer, Trex IPTV makes it easy to connect your account to a supported IPTV player
+              and start exploring available content anywhere in the USA.
             </motion.p>
 
             <motion.p
@@ -49,7 +54,9 @@ export default function Hero() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
               className="mt-2 sm:mt-3 text-zinc-600 text-[13px] sm:text-[15px] leading-snug sm:leading-relaxed font-medium max-w-xl"
             >
-              Choose your access period, receive your login and connect it to a supported IPTV player.
+              Choose an IPTV Trex subscription period according to your needs, check device
+              compatibility, and get the Trex IPTV installation guide anytime &amp; customer support
+              24/7.
             </motion.p>
 
             <motion.div
@@ -65,6 +72,15 @@ export default function Hero() {
                 className="btn-brand btn-brand-animated h-11 sm:h-12 px-5 sm:px-7 text-[12px] sm:text-sm whitespace-nowrap"
               >
                 Get Trex IPTV
+              </motion.a>
+
+              <motion.a
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+                href="/subscription-plans/"
+                className="btn-outline h-11 sm:h-12 px-5 sm:px-7 text-[12px] sm:text-sm whitespace-nowrap"
+              >
+                View Trex IPTV Subscription Plans
               </motion.a>
 
               <motion.a

@@ -4,12 +4,11 @@ import { CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const trialChecks = [
-  "Device compatibility",
-  "Player installation",
-  "Login loading",
+  "Installation",
+  "Login access",
   "Picture quality",
-  "Internet performance",
-  "General content availability",
+  "General catalog availability",
+  "Device compatibility",
 ];
 
 export default function TrialSection() {
@@ -23,11 +22,12 @@ export default function TrialSection() {
         className="w-full"
       >
         <h2 className="text-[26px] sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-zinc-900 mb-4 sm:mb-6">
-          Try It on Your Own <span className="text-[#ff3503]">Device</span>
+          Trial Before a Longer <span className="text-[#ff3503]">Commitment</span>
         </h2>
 
         <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-3">
-          Eligible new customers can request a 24-hour trial.
+          Eligible new customers can request a 24-hour trial to check installation, login access,
+          picture quality, and general catalog availability before purchasing a subscription.
         </p>
         <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium mb-6">
           Use the trial to check:
@@ -53,10 +53,8 @@ export default function TrialSection() {
 
         <div className="space-y-3 mb-8">
           <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
-            No payment card is required. The trial ends automatically and does not become a paid subscription unless you place a separate order.
-          </p>
-          <p className="text-zinc-600 text-[13px] sm:text-[15px] leading-relaxed font-medium">
-            Trial approval may be limited to one per customer, household, device or network.
+            Confirm the current eligibility rules and trial conditions with support before
+            requesting access.
           </p>
         </div>
 
@@ -64,9 +62,9 @@ export default function TrialSection() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           href="/free-trial-contact/"
-          className="inline-flex h-12 items-center justify-center rounded-[4px] bg-[#ff3503] px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#ff3503] transition-colors"
+          className="inline-flex h-12 items-center justify-center rounded-[4px] bg-[#ff3503] px-8 text-[13px] sm:text-sm font-bold text-white shadow-sm hover:bg-[#e62e03] transition-colors"
         >
-          Request a Free Trial
+          Start Free Trial
         </motion.a>
       </motion.div>
     </section>

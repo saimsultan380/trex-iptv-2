@@ -28,7 +28,7 @@ export const SITE_OG_IMAGE_WIDTH = 1200;
 export const SITE_OG_IMAGE_HEIGHT = 630;
 
 export const DEFAULT_TITLE =
-  "Trex IPTV – Live TV, Movies & Series in the USA";
+  "Trex IPTV USA | Get Trex IPTV Subscription & Reseller Panel";
 
 export const DEFAULT_DESCRIPTION =
-  "Use Trex IPTV to watch live TV, movies and series on Firestick, Smart TVs, Android, iPhone and more, with setup help for U.S. viewers.";
+  "Enjoy a simpler way to watch television with Trex IPTV in the USA. Explore live TV, movies, series, news, entertainment, and selected sports content through a compatible device and an internet connection.";
