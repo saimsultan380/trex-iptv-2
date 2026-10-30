@@ -14,6 +14,43 @@ export interface BlogPost {
 /** Blog card images — keep in sync with each article's `*Meta.image` in lib/blog/. */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "trex-iptv-official-features-subscription-setup",
+    href: "/trex-iptv-official-features-subscription-setup/",
+    title: "Trex IPTV Official: Features, Subscription and Setup Guide",
+    description:
+      "Explore Trex IPTV features, compare subscription options, understand device compatibility, and learn the setup process before choosing a plan that suits you.",
+    image: "/trex-iptv-features-subscription-setup-guide-thumbnail.jpg",
+    category: "Overview",
+    readTime: "14 min read",
+    date: "October 30, 2026",
+    author: "Trex IPTV Team",
+    featured: true,
+  },
+  {
+    slug: "how-to-install-trex-iptv-android-tv-google-tv",
+    href: "/how-to-install-trex-iptv-android-tv-google-tv/",
+    title: "How to Install Trex IPTV on Android TV and Google TV",
+    description:
+      "Learn how to install Trex IPTV on Android TV and Google TV, add your IPTV player login or M3U playlist, load channels, and fix common setup problems today.",
+    image: "/trex-iptv-android-google-tv-setup-thumbnail.jpg",
+    category: "Setup Guide",
+    readTime: "12 min read",
+    date: "October 30, 2026",
+    author: "Trex IPTV Team",
+  },
+  {
+    slug: "how-to-setup-trex-iptv-on-firestick",
+    href: "/how-to-setup-trex-iptv-on-firestick/",
+    title: "How to Install or Set Up or Install Trex IPTV on Firestick under 3 Minutes?",
+    description:
+      "Learn how to install Trex IPTV on Firestick, set up a compatible IPTV player, enter your login details, load channels, and fix common setup issues.",
+    image: "/trex-iptv-firestick-setup-thumbnail.jpg",
+    category: "Setup Guide",
+    readTime: "11 min read",
+    date: "October 30, 2026",
+    author: "Trex IPTV Team",
+  },
+  {
     slug: "how-to-become-trex-iptv-reseller",
     href: "/how-to-become-trex-iptv-reseller/",
     title: "Become a Trex IPTV Reseller & Get a Trex IPTV Reseller Panel",
@@ -24,7 +61,6 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "12 min read",
     date: "October 15, 2026",
     author: "Trex IPTV Team",
-    featured: true,
   },
   {
     slug: "trex-iptv-login-not-working",
